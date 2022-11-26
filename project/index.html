@@ -7,17 +7,7 @@ title: Project
 
 <div class="container py-4">
     <p style="font-weight: 500 !important; text-transform: uppercase;">Research Area & Projects</p>
-    <div class="row">
-    <div class="col-xs-12 col-sm-9 my-auto">
-        <p class="section-body">My research focuses on <span class="intext-highlight" id="designing">designing</span> and evaluating <span class="intext-highlight" id="social">social computing systems</span> that support real-world collaborative processes by harnessing <span class="intext-highlight" id="ai-ml">machine intelligence</span>.
-        <br><br>Specifically, my research aims to (i) surface challenges of collaborations arising in the multi-faceted user group and (ii) build AI-infused systems to support them.<br><br>(+ I like mixed-methods approach!)</p>
-        </div>
-    <div class="col-xs-12 col-sm-3 my-auto">
-        <div class="venn" id="venn"></div>
-        <div id="tooltip">&nbsp;</div>
-        <p class="venn-caption">↑ Hover over the diagram!</p>
-    </div>
-    </div>
+    
     <hr>
     {% for project in projects %}
     {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}

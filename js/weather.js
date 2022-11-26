@@ -398,8 +398,8 @@ function prefix(id) {
 
   return icon;
 }
-const city = "Seattle";
-const openweathermap_token = "05d354a6f8e22e86e0f4394c6f9144c8";
+const city = "Hangzhou";
+const openweathermap_token = "70e58ab3cb03dc250b4a286ce61101c9";
 
 fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${openweathermap_token}&units=metric`)           //api for the get request
 .then(response => response.json())
