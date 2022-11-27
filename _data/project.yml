@@ -8,7 +8,11 @@ project:
     image: vlover.png
    
   - title: "Chat-based Supervision Service & Behaviors Change"
-    description: "Many people gather online and form teams with strangers to collaborate on tasks. However, while intrateam trust and cohesion are critical for team performance, such characteristics take time to establish and are harder to build up through computer-mediated communication. Building on prior research that has shown that establishing common ground between members can help, we hypothesized that the use of a chatbot to support the familiarization of ad hoc teammates can help their collaboration. As such, we designed IntroBot, a chatbot that builds on an online discussion facilitator framework and leverages the social media data of users to assist their familiarization process. Through a between-subjects study (N=60), we found that participants who used IntroBot reported higher levels of trust, cohesion, and interaction quality, as well as generated more ideas in a collaborative brainstorming task. We discuss insights gained from our study, and present opportunities for the future of chatbot-assisted collaboration."
+    description: "Changing behavior is hard and often fails, and people are constantly looking for different tools to help them discipline themselves.
+This paper reports a mixed-methods study about Chat-based Supervision Services (CSS), an emerging sharing economy in China that aims to assist clients in better task completion and behavior change. 
+Findings reveal motivations and practices of clients and supervisors. And we identify three practices and their relationships in CSS : with task reminders and tracking at the core, experience-based information support and emotinal support as secondary support, and flexibility and personalization as two key features, to help clients complete their tasks.
+We discuss the design implications for task completion, behavior change, and the emerging gig economy broadly.
+"
     image: "sds.png"
 
   - title: "CAPT with Exaggerated Audio-Visual Corrective Feedback"
