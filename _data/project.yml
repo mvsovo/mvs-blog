@@ -2,10 +2,12 @@ project:
   - title: "AI-mediated communication between remote family members"
     description: "Adult children (especially for Chinese college students) and their parents may have some problems with computer-mediated communication: e.g., inconsistent understanding of online language and emojis, expressions, and lack of common topics of interest. We are designing chatbot to facilitate better communication between adult children and their parents."
     image: chatbot.png
+    gif: chatbot.gif
 
   - title: "Virtual intimacy & Computer-Mediated Paid Companionship"
     description: "Virtual romance service (VRS), as a notable commodification of intimacy, is currently emerging in China. Such service is not similar to the kind of intimacy that fans and idols generate through parasocial relationships, but behaves as the direct dyadic intimacy between service providers virtual lovers and buyers customers. Through research, we found three behavioral strategies of virtual lovers and the fact that they provide service in surface and deep acting and real feeling. Customers also see VRS as a way to obtain affective benefits with reduced affective costs. We also found that VRS customers paid for the tangible benefits of an idealized romantic partner, rather than long-term commitment and emotional investment, and identified key characteristics that VRS reduces from intimate relationships that fit its pay-per-use feature."
-    image: vlover.png
+    image: vlover1.png
+    gif: vlover.gif 
    
   - title: "Chat-based Supervision Service & Behaviors Change"
     description: "Changing behavior is hard and often fails, and people are constantly looking for different tools to help them discipline themselves.
@@ -14,13 +16,17 @@ Findings reveal motivations and practices of clients and supervisors. And we ide
 We discuss the design implications for task completion, behavior change, and the emerging gig economy broadly.
 "
     image: "sds.png"
+    gif: sds.gif 
 
   - title: "CAPT with Exaggerated Audio-Visual Corrective Feedback"
     description: "Second language (L2) English learners often find it difficult to improve their pronunciations due to the lack of expressive and personalized corrective feedback. We present Pronunciation Teacher (PTeacher), a Computer-Aided Pronunciation Training (CAPT) system that provides personalized exaggerated audio-visual corrective feedback for mispronunciations. Three critical metrics are proposed for both learners and teachers to identify the best exaggeration levels in both audio and visual modalities. Additionally, we incorporate the personalized dynamic feedback mechanism given the English proficiency of learners. Based on the obtained insights, a comprehensive interactive pronunciation training course is designed to help L2 learners rectify mispronunciations in a more perceptible, understandable, and discriminative manner. Extensive user studies demonstrate that our system significantly promotes the learning efficiency."
     image: "capt.png"
+    gif: capt.gif
     pdf: "chi2021_capt_paper.pdf"
+    
 
   - title: "An Integrated Method to Build Read-Aiding E-Books Based on Text Mining and Interactive Aesthetics"
     description: "Although text mining is helpful in extracting complicated character and/or place relationships of text, how it could be utilized to enhance the reading experience has not been well studied. We propose a four-stage method to build read-aiding e-books directly from text, integrating the technologies in text mining and the ideas in interactive aesthetics. By applying this method, we manage to identify and present multiple complex relationships in the classical Chinese novel Romance of the Three Kingdoms, providing readers with vivid scenes and rich interactions for better comprehension."
     image: "read.png"
     pdf: "jcdl2020_ebook_poster.pdf"
+    gif: read.gif 
