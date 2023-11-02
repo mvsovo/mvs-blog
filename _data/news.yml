@@ -1,13 +1,15 @@
 list: # format date as dd/mm/yyyy
-  - title: "CSCW paper accepted"
-    date: "08/11/2022"
-    description: "Excited to share that our paper on understanding computer-mediated intimacy"
-  - title: "Submitted one CHI paper"
-    date: "15/09/2022" # Oct 21, 2021
-    description: "Submitted one CHI papers on CSCW"
-  - title: "Submitted one CSCW paper"
-    date: "15/01/2022"
+  - title: "Attending CSCW 2023 ✈ in Minneapolis, MN and later had an in-person presentation of my paper. 📄🎤"
+    date: "13/10/2023"
+  - title: "Submitted three CHI papers! 📝🎉 Finally done!"
+    date: "08/09/2023"
+  - title: "Participated in a road race in the US and clinched the second place! 🥈🚴‍♂️"
+    date: "01/08/2023" # Oct 21, 2021
+  - title: "Attended IDC 2023 ✈ in Chicago and presented my poster in-person. Met lots of new friends! 🏙️📌👫"
+    date: "15/06/2023"
     description: "Submitted one CHI papers on CSCW and virtual intimacy"
-  - title: "Started my graduate studies at ZJU Inlab"
-    date: "01/09/2021" # Oct 21, 1997
-    description: "Excited to share that I just started my new journey as a master student at the Zhejiang University"
+  - title: "Went to Notre Dame University and started working in-person with Toby! 🏫👩‍💻🤝"
+    date: "25/05/2023" # Oct 21, 1997
+  - title: "My CSCW paper focusing on intimacy got accepted! 💌📚"
+    date: "2/2022"
+

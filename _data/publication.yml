@@ -3,6 +3,7 @@ publication:
     pubs:
       - title: An Empathy-Based Sandbox Approach to Bridge Attitudes, Goals, Knowledge, and Behaviors in the Privacy Paradox
         image: sandbox.png
+        gif: sandbox.gif
         authors:
           - Chaoran Chen
           - Weijun Li
@@ -11,19 +12,22 @@ publication:
           - Yaxing Yao
           - Toby Jia-jun Li
         id: chi24_sandbox
-        venue: Submitted to CHI 24 (arxiv)
+        venue: Submitted to CHI 24 
         venue_full: ''
-        abstract:
-        note: We introduce an empathy-based approach that allows users to experience how privacy behaviors may alter system outcomes in a risk-free sandbox environment from the perspective of artificially generated personas. To generate realistic personas, we introduce a novel pipeline that augments the outputs of large language models using few-shot learning, contextualization, and chain of thoughts. 
+        note: arxiv
+        video: GDO5anAjTG8
+        abstract: We introduce an empathy-based approach that allows users to experience how privacy behaviors may alter system outcomes in a risk-free sandbox environment from the perspective of artificially generated personas. To generate realistic personas, we introduce a novel pipeline that augments the outputs of large language models using few-shot learning, contextualization, and chain of thoughts. 
         category: 
-          - "AI / NLP"
+          - "AI & Cognition"
           - "CSCW"
+          - "Privacy"
         featured: true
+
   - year: '2023'
     pubs:
       - title: What makes virtual intimacy...intimate? Understanding the Phenomenon and Practice of Computer-Mediated Paid Companionship
-        image: vlover.png
-        gif: capt.png
+        image: intimacy.png
+        gif: intimacy.gif
         authors:
           - Weijun Li
           - Shi Chen
@@ -32,16 +36,17 @@ publication:
         id: cscw2023_vlover_paper
         venue: CSCW 2023
         venue_full: ''
-        abstract:
-        note: In China, Virtual romance service (VRS) provides a direct dyadic intimacy, different from fan-idol parasocial ties. Our study of 178 surveys and 22 interviews revealed virtual lovers' strategies to meet customers' emotional needs. Customers value VRS for its emotional benefits without the need for long-term commitment. We conclude with insights into the unique nature of virtual lovers and design implications for digital companionship.
+        abstract: In China, Virtual romance service (VRS) provides a direct dyadic intimacy, different from fan-idol parasocial ties. Our study of 178 surveys and 22 interviews revealed virtual lovers' strategies to meet customers' emotional needs. Customers value VRS for its emotional benefits without the need for long-term commitment. We conclude with insights into the unique nature of virtual lovers and design implications for digital companionship.
         category: 
           - "AI / NLP"
           - "CSCW"
         featured: true
+
   - year: '2023'
     pubs:
       - title: I Never Envy Anyone, for I Have Already Built a Kingdom With My Fingertips, Exploring Teenagers’ Experience in Chat-based Cosplay Community
         image: kcos.png
+        gif: kcos.png
         authors:
           - Weijun Li
           - Yaohua Bu
@@ -50,10 +55,10 @@ publication:
           - Lingyun Sun
           - Changyuan Yang
         id: acm_idc2023_cosplay_paper 
-        venue: IDC 23 (WiP)
+        venue: IDC 23 
         venue_full: Proceedings of the 22nd Annual ACM Interaction Design and Children Conference
-        abstract: This paper reports an interview study about the practice of teenagers’ chat-based cosplay in China. Findings reveal the four primary motivations of the participants and their main practice in chat-based cosplay. We found that adolescents perceived character presentation and portrayal as a central aspect of chat-based cosplay and they devoted significant effort to refine their characters to achieve higher character consistency. We highlighted the positive feedback loop between social relationships and story creation in chat-based cosplay community. In addition, we identified the influence and negative experiences on adolescents in the chat-based cosplay community.
-        note: This paper examines teenagers' chat-based cosplay in China. We found four primary motivations and their main practice. Adolescents perceived character presentation as key and devoted significant effort to refine their characters for higher consistency. We spotlight the interplay between social relationships and story creation, and also note both positive and negative experiences within the community.
+        abstract: This paper examines teenagers' chat-based cosplay in China. We found four primary motivations and their main practice. Adolescents perceived character presentation as key and devoted significant effort to refine their characters for higher consistency. We spotlight the interplay between social relationships and story creation, and also note both positive and negative experiences within the community.
+        note: WiP
         category:  
           - "Interaction Design"
           - "Children & Teens"
@@ -62,7 +67,8 @@ publication:
   - year: '2023'
     pubs:
       - title: EdibleToy:Empowering Children to Create Their Own Meals with a DIY Wafer Paper Kit
-        image: kcos.png
+        image: EdibleToy.png
+        gif: kit.gif
         authors:
           - Yilin Shao
           - Boyu Feng
@@ -76,9 +82,10 @@ publication:
           - Guanyun Wang
         id: acm_idc2023_cosplay_paper 
         venue: IDC 23 (WiP)
+        video: Z09NrmssyFY
         venue_full: Proceedings of the 22nd Annual ACM Interaction Design and Children Conference
-        abstract: This paper reports an interview study about the practice of teenagers’ chat-based cosplay in China. Findings reveal the four primary motivations of the participants and their main practice in chat-based cosplay. We found that adolescents perceived character presentation and portrayal as a central aspect of chat-based cosplay and they devoted significant effort to refine their characters to achieve higher character consistency. We highlighted the positive feedback loop between social relationships and story creation in chat-based cosplay community. In addition, we identified the influence and negative experiences on adolescents in the chat-based cosplay community.
-        note: This paper examines teenagers' chat-based cosplay in China. We found four primary motivations and their main practice. Adolescents perceived character presentation as key and devoted significant effort to refine their characters for higher consistency. We spotlight the interplay between social relationships and story creation, and also note both positive and negative experiences within the community.
+        abstract: This paper examines teenagers' chat-based cosplay in China. We found four primary motivations and their main practice. Adolescents perceived character presentation as key and devoted significant effort to refine their characters for higher consistency. We spotlight the interplay between social relationships and story creation, and also note both positive and negative experiences within the community.
+        note: WiP
         category:  
           - "Interaction Design"
           - "Children & Teens"
@@ -87,7 +94,8 @@ publication:
   - year: '2023'
     pubs:
       - title: Cultural Self-Adaptive Multimodal Gesture Generation Based on Multiple Culture Gesture Dataset
-        image: 1
+        image: gesture.png
+        gif: gesture.png
         authors:
           - Jingyu Wu
           - Shi Chen
@@ -98,17 +106,17 @@ publication:
         id: acm_mm23_gesture 
         venue: MM 23 
         venue_full: Proceedings of the 22nd Annual ACM Interaction Design and Children Conference
-        abstract: This paper reports an interview study about the practice of teenagers’ chat-based cosplay in China. Findings reveal the four primary motivations of the participants and their main practice in chat-based cosplay. We found that adolescents perceived character presentation and portrayal as a central aspect of chat-based cosplay and they devoted significant effort to refine their characters to achieve higher character consistency. We highlighted the positive feedback loop between social relationships and story creation in chat-based cosplay community. In addition, we identified the influence and negative experiences on adolescents in the chat-based cosplay community.
-        note: This paper examines teenagers' chat-based cosplay in China. We found four primary motivations and their main practice. Adolescents perceived character presentation as key and devoted significant effort to refine their characters for higher consistency. We spotlight the interplay between social relationships and story creation, and also note both positive and negative experiences within the community.
+        note: 
+        abstract: This paper examines teenagers' chat-based cosplay in China. We found four primary motivations and their main practice. Adolescents perceived character presentation as key and devoted significant effort to refine their characters for higher consistency. We spotlight the interplay between social relationships and story creation, and also note both positive and negative experiences within the community.
         category:  
-          - "Interaction Design"
-          - "Children & Teens"
+          - "AI"
         featured: true
 
   - year: '2021'
     pubs:
       - title: PTeacher, a Computer-Aided Personalized Pronunciation Training System with Exaggerated Audio-Visual Corrective Feedback
-        image: capt.png
+        image: pteacher.png
+        gif: capt.gif
         authors:
           - Yaohua Bu*
           - Tianyi Ma*
@@ -130,8 +138,8 @@ publication:
 
         venue: CHI 2021
         venue_full: 2021 CHI Conference on Human Factors in Computing Systems
-        abstract: Second language (L2) English learners often find it difficult to improve their pronunciations due to the lack of expressive and personalized corrective feedback. In this paper, we present Pronunciation Teacher (PTeacher), a Computer-Aided Pronunciation Training (CAPT) system that provides personalized exaggerated audio-visual corrective feedback for mispronunciations. Though the effectiveness of exaggerated feedback has been demonstrated, it is still unclear how to define the appropriate degrees of exaggeration when interacting with individual learners. To fill in this gap, we interview 100 L2 English learners and 22 professional native teachers to understand their needs and experiences. Three critical metrics are proposed for both learners and teachers to identify the best exaggeration levels in both audio and visual modalities. Additionally, we incorporate the personalized dynamic feedback mechanism given the English proficiency of learners. Based on the obtained insights, a comprehensive interactive pronunciation training course is designed to help L2 learners rectify mispronunciations in a more perceptible, understandable, and discriminative manner. Extensive user studies demonstrate that our system significantly promotes the learners' learning efficiency.
-        note: L2 English learners find it difficult to improve pronunciation due to lack of personalized feedback. This paper presents Pronunciation Teacher (PTeacher), a CAPT system offering personalized exaggerated audio-visual feedback. Interviewing 100 L2 learners and 22 native teachers, we propose three metrics to determine exaggeration levels in both modalities. We incorporate dynamic feedback based on learner proficiency. User studies indicate our system improves learning efficiency.
+        abstract: L2 English learners find it difficult to improve pronunciation due to lack of personalized feedback. This paper presents Pronunciation Teacher (PTeacher), a CAPT system offering personalized exaggerated audio-visual feedback. Interviewing 100 L2 learners and 22 native teachers, we propose three metrics to determine exaggeration levels in both modalities. We incorporate dynamic feedback based on learner proficiency. User studies indicate our system improves learning efficiency.
+        note: 
         bibtex: |-
           @inproceedings{10.1145/3411764.3445490,
               author = {Bu, Yaohua and Ma, Tianyi and Li, Weijun and Zhou, Hang and Jia, Jia and Chen, Shengqi and Xu, Kaiyuan and Shi, Dachuan and Wu, Haozhe and Yang, Zhihan and Li, Kun and Wu, Zhiyong and Shi, Yuanchun and Lu, Xiaobo and Liu, Ziwei},
@@ -151,14 +159,15 @@ publication:
               series = {CHI '21}
               }
         category: 
-          - "AI / NLP"
-          - "Healthcare"
+          - "AI"
+          - "Education"
           - "CSCW"
         featured: true
   - year: '2021'  
     pubs:
       - title: Visual-speech Synthesis of Exaggerated Corrective Feedback
-        image: omhc-flow.jpg
+        image: mmdemo.png
+        gif: mmdemo.png
         authors:
           - Yaohua Bu*
           - Weijun Li*
@@ -168,19 +177,19 @@ publication:
           - Kun Li
           - Xiaobo Lu
         id: mm2020_ecf_demo
-        venue: MM 2020 (Demo)
+        venue: MM 2020 
         venue_full: Proceedings of the 28th ACM International Conference on Multimedia
-        abstract: To provide more discriminative feedback for the second language (L2) learners to better identify their mispronunciation, we propose a method for exaggerated visual-speech feedback in computer-assisted pronunciation training (CAPT). The speech exaggeration is realized by an emphatic speech generation neural network based on Tacotron, while the visual exaggeration is accomplished by ADC Viseme Blending, namely increasing Amplitude of movement, extending the phone's Duration and enhancing the color Contrast. User studies show that exaggerated feedback outperforms non-exaggerated version on helping learners with pronunciation identification and pronunciation improvement.
-        note: We propose a method for exaggerated visual-speech feedback in CAPT. The speech exaggeration is realized by an emphatic speech generation neural network based on Tacotron, while the visual exaggeration is accomplished by ADC Viseme Blending, namely increasing Amplitude of movement, extending the phone’s Duration and enhancing the color Contrast. 
+        note: demo
+        abstract: We propose a method for exaggerated visual-speech feedback in CAPT. The speech exaggeration is realized by an emphatic speech generation neural network based on Tacotron, while the visual exaggeration is accomplished by ADC Viseme Blending, namely increasing Amplitude of movement, extending the phone’s Duration and enhancing the color Contrast. 
         category: 
           - "AI / NLP"
-          - "Healthcare"
-          - "CSCW"
+          - "Education"
         featured: true
   - year: '2020'
     pubs:
       - title: "An Integrated Method to Build Read-Aiding E-Books Based on Text Mining and Interactive Aesthetics"
-        image: amslertouch.jpg
+        image: ebook.png
+        gif: ebook.gif
         id: jcdl2020_ebook_poster
         video: ohL-t6EBHT8
         authors:
@@ -189,7 +198,8 @@ publication:
           - Ruibing Jia
           - Renmin Li
           - Minghao Yin
-        note:  We propose a four-stage method to build read-aiding e-books directly from text, integrating the technologies in text mining and the ideas in interactive aesthetics. By applying this method, we manage to identify and present multiple complex relationships in the classical Chinese novel Romance of the Three Kingdoms, providing readers with vivid scenes and rich interactions for better comprehension.
+        note: poster
+        abstract: We propose a four-stage method to build read-aiding e-books directly from text, integrating the technologies in text mining and the ideas in interactive aesthetics. By applying this method, we manage to identify and present multiple complex relationships in the classical Chinese novel Romance of the Three Kingdoms, providing readers with vivid scenes and rich interactions for better comprehension.
         venue: JCDL 2020
         venue_full: Proceedings of the ACM/IEEE Joint Conference on Digital Libraries
         category: JCDL 2020（Poster）
