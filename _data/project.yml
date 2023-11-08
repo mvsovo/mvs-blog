@@ -1,7 +1,28 @@
 project:
+  - title: IcooBook
+    image: icon1.png
+    detail: >
+      <p> Work with Yaohua Bu, Xiang Li, Xiaobo Lu</p>
+      <p> IcooBook tells the story of a child's healthy and happy growth in kindergarten. Through reading, children not only experience the interesting stories happening in kindergarten, but also learn through various courses, including physics, reading, poetry, and general knowledge courses.</p>
+      <p>The 2.0 Version of IcooBook is supported by United Nations Children’s Fund(UNICEF)</p>
+      <img src='site.baseurl/assets/images/project/icon2.png' class='img-responsive' alt='keyscreen of our system'>
+
+      <p style='text-align: center;'><b>An example of causal pathway diagram (CPD)</b></p>
+
+      <hr>
+
+      <p><b>[My role in this project]</b><br>Development and maintenance of icoobook version 2.0</p>
+    tags:
+      - Support by UNICEF
+      - Products
+  
+    description: >-
+      Interactive picture book for children  
+
   - title: DrawTime
     image: drawtime_p.png
     detail: >
+      <p> Work with Zhihong Wei, Jie Liang</p>
       <p> The project was designed to help teenagers develop better behaviors by maintaining a virtual self, which aided in effective time and emotional management. Launched in 2019, it reached 10,000 active users in six months. However, due to everyone's busy schedules, we couldn't maintain it :/ </p>
 
       <img src='site.baseurl/assets/images/project/drawtime_dl.png' class='img-responsive' alt='keyscreen of our system'>
@@ -17,11 +38,12 @@ project:
       - products
       - 1,0000 users
     description: >-
-      Project to help teenagers behaviors change.
+      Help teenagers change behaviors by using virtual-self
     id: DrawTime
   - title: Crypto Email:Metamail
     image: metamail.png
     detail: >
+      <p> Work with Xuri, liyi Guo</p>
       <p> We created a Crypto Email service, one of the first on the market. While the exact need for it wasn't clear, the popularity of web3  help us attracted grant funding. I'm still considering what the real value of the project might be. Yet, I see the blockchain as promising for other uses, like the gig economy.</p>
       <img src='site.baseurl/assets/images/project/metamail_d.png' class='img-responsive' alt='keyscreen of our system'>
 
@@ -34,40 +56,25 @@ project:
       - Products
       - 1,0000 users
     description: >-
-      Crypto Email
+      Privacy-first end-to-end encrypted email
     id: design_card
-  - title:  Online companion learning.
+  - title:  Chat-Based Supervision Service in China
     image: sds_s.png
     detail: >
-     <p> </p>
+     <p> Work with Yaohua Bu, Suqi Lou </p>
+     <p> Chat-based Supervision Services, an emerging gig economy in China that aims to assist people in achieving better task completion and behavior change. We conducted a mixed-methods study that included an analysis of user reviews (N = 792) and interviews (N = 21) with those who had experience with CSS,Findings reveal the motivations and practices of clients and supervisors. We identify three key practices of CSS that promote behavior change: task reminders and tracking at the core, experience-based information support and emotional support as secondary support, and flexibility and personalization as key factors. We also explored the multiple social roles of supervisors in CSS.</p>
 
       <img src='site.baseurl/assets/images/project/sdsp.png' class='img-responsive' alt=''>
 
-      <p style='text-align: center;'><b>An example of causal pathway diagram (CPD)</b></p>
+      <p style='text-align: center;'><b>Key practices and factors in CSS (CPD)</b></p>
 
       <hr>
 
-      <p><b>[My role in this project]</b><br>Leading the project/p>
+      <p><b>[My role in this project]</b><br>Leading the project</p>
     tags:
       - Research
       - Behavoir Change
 
     description: >-
       Online companion learning.
-  - title: ICOOBOOK
-    image: icon1.png
-    detail: >
-
-      <img src='site.baseurl/assets/images/project/icon2.png' class='img-responsive' alt='keyscreen of our system'>
-
-      <p style='text-align: center;'><b>An example of causal pathway diagram (CPD)</b></p>
-
-      <hr>
-
-      <p><b>[My role in this project]</b><br>Building a system</p>
-    tags:
-      - Research
-      - Products
-  
-    description: >-
-      ICOOBOOK    
+ 

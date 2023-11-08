@@ -18,9 +18,10 @@ publication:
         video: GDO5anAjTG8
         abstract: We introduce an empathy-based approach that allows users to experience how privacy behaviors may alter system outcomes in a risk-free sandbox environment from the perspective of artificially generated personas. To generate realistic personas, we introduce a novel pipeline that augments the outputs of large language models using few-shot learning, contextualization, and chain of thoughts. 
         category: 
-          - "AI & Cognition"
-          - "CSCW"
-          - "Privacy"
+           - "Responsibility"
+           - "Wellbeing"
+           - "CSCW"
+           - "AI Tools"
         featured: true
 
   - year: '2023'
@@ -38,7 +39,8 @@ publication:
         venue_full: ''
         abstract: In China, Virtual romance service (VRS) provides a direct dyadic intimacy, different from fan-idol parasocial ties. Our study of 178 surveys and 22 interviews revealed virtual lovers' strategies to meet customers' emotional needs. Customers value VRS for its emotional benefits without the need for long-term commitment. We conclude with insights into the unique nature of virtual lovers and design implications for digital companionship.
         category: 
-          - "AI / NLP"
+          - "Responsibility"
+          - "Wellbeing"
           - "CSCW"
         featured: true
 
@@ -60,8 +62,9 @@ publication:
         abstract: This paper examines teenagers' chat-based cosplay in China. We found four primary motivations and their main practice. Adolescents perceived character presentation as key and devoted significant effort to refine their characters for higher consistency. We spotlight the interplay between social relationships and story creation, and also note both positive and negative experiences within the community.
         note: WiP
         category:  
-          - "Interaction Design"
-          - "Children & Teens"
+          - "Responsibility"
+          - "Wellbeing"
+          - "CSCW"
         featured: true
 
   - year: '2023'
@@ -87,8 +90,8 @@ publication:
         abstract:  Drawing inspiration from shape-changing food research, we propose an approach that combines deformable wafer paper for food preparation. We summarize the principles of wafer paper controllable deformation and develop a toolkit to facilitate its use. We support children increating personalized, transformable food items using this method.
         note: WiP
         category:  
-          - "Interaction Design"
-          - "Children & Teens"
+          - "Wellbeing"
+
         featured: true
 
   - year: '2023'
@@ -109,7 +112,8 @@ publication:
         note: 
         abstract: The paper introduces the Multiple Culture Gesture Dataset (MCGD), the largest public gesture dataset, with data from ten cultures, 200+ speakers, and 10,000 sequences. It also proposes a Cultural Self-adaptive Gesture Generation Network (CSGN) that generates culturally adaptive gestures without retraining, improving gesture generation's cultural accuracy and reducing average FGD to 48.0 and increasing CDR to 39.87%.
         category:  
-          - "AI"
+          - "Responsibility"
+          - "AI Tools"
         featured: true
 
   - year: '2021'
@@ -159,8 +163,7 @@ publication:
               series = {CHI '21}
               }
         category: 
-          - "AI"
-          - "Education"
+          - "AI Tools"
           - "CSCW"
         featured: true
   - year: '2021'  
@@ -182,8 +185,7 @@ publication:
         note: demo
         abstract: We propose a method for exaggerated visual-speech feedback in CAPT. The speech exaggeration is realized by an emphatic speech generation neural network based on Tacotron, while the visual exaggeration is accomplished by ADC Viseme Blending, namely increasing Amplitude of movement, extending the phone’s Duration and enhancing the color Contrast. 
         category: 
-          - "AI / NLP"
-          - "Education"
+           - "AI Tools"
         featured: true
   - year: '2020'
     pubs:
@@ -220,6 +222,8 @@ publication:
             location = {Virtual Event, China},
             series = {JCDL '20}
             }
-        abstract: 
+        category: 
+           - "AI Tools"
+        featured: true
 
       
