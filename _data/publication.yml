@@ -80,11 +80,11 @@ publication:
           - Ye Tao
           - Lingyun Sun
           - Guanyun Wang
-        id: acm_idc2023_cosplay_paper 
-        venue: IDC 23 (WiP)
+        id: idc2023_edittoy
+        venue: IDC 23
         video: Z09NrmssyFY
         venue_full: Proceedings of the 22nd Annual ACM Interaction Design and Children Conference
-        abstract: This paper examines teenagers' chat-based cosplay in China. We found four primary motivations and their main practice. Adolescents perceived character presentation as key and devoted significant effort to refine their characters for higher consistency. We spotlight the interplay between social relationships and story creation, and also note both positive and negative experiences within the community.
+        abstract:  Drawing inspiration from shape-changing food research, we propose an approach that combines deformable wafer paper for food preparation. We summarize the principles of wafer paper controllable deformation and develop a toolkit to facilitate its use. We support children increating personalized, transformable food items using this method.
         note: WiP
         category:  
           - "Interaction Design"
@@ -103,11 +103,11 @@ publication:
           - Weijun Li
           - Changyuan Yang
           - Lingyun Sun
-        id: acm_mm23_gesture 
+        id: mm23_gesture 
         venue: MM 23 
         venue_full: Proceedings of the 22nd Annual ACM Interaction Design and Children Conference
         note: 
-        abstract: This paper examines teenagers' chat-based cosplay in China. We found four primary motivations and their main practice. Adolescents perceived character presentation as key and devoted significant effort to refine their characters for higher consistency. We spotlight the interplay between social relationships and story creation, and also note both positive and negative experiences within the community.
+        abstract: The paper introduces the Multiple Culture Gesture Dataset (MCGD), the largest public gesture dataset, with data from ten cultures, 200+ speakers, and 10,000 sequences. It also proposes a Cultural Self-adaptive Gesture Generation Network (CSGN) that generates culturally adaptive gestures without retraining, improving gesture generation's cultural accuracy and reducing average FGD to 48.0 and increasing CDR to 39.87%.
         category:  
           - "AI"
         featured: true

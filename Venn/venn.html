@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Venn</title>
+	<style>
+		:root {
+			font-family: 'Barlow', Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+				Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+			--font-mono: 'Fira Mono', monospace;
+			--pure-white: #ffffff;
+			--primary-color: #b9c6d2;
+			--secondary-color: #d0dde9;
+			--tertiary-color: #edf0f8;
+			--accent-color: #ff3e00;
+			--heading-color: rgba(0, 0, 0, 0.7);
+			--text-color: #444444;
+			--background-without-opacity: rgba(255, 255, 255, 0.7);
+			--column-width: 42rem;
+			--column-margin-top: 4rem;
+		}
+
+		body {
+			font-size: 10px;
+			line-height: 1.1;
+			font-family: 'Barlow', 'Noto Sans TC', 'Noto Sans KR' !important;
+			font-weight: 300
+		}
+
+		.venn-area path {
+			cursor: pointer;
+		}
+
+		[data-venn-sets="A"] path {
+			fill: #f1b13a !important;
+			
+
+		}
+		[data-venn-sets="A"] text {
+			fill: #cd8500 !important;
+			font-weight: 600;
+			font-size: 12;
+			font-family: 'Barlow', 'Noto Sans TC', 'Noto Sans KR' !important;
+
+
+		}
+
+		[data-venn-sets="B"] path{
+			fill: #0076e4 !important;
+		}
+		[data-venn-sets="B"] text {
+			fill: #06549c !important;
+			font-weight: 600;
+			font-size: 12;
+			font-family: 'Barlow', 'Noto Sans TC', 'Noto Sans KR' !important;
+
+		}
+
+		[data-venn-sets="C"] path{
+			fill: #13a339 !important;
+
+		}
+		[data-venn-sets="C"] text {
+			fill: #02621b !important;
+			font-weight: 600;
+			font-size: 12;
+			font-family: 'Barlow', 'Noto Sans TC', 'Noto Sans KR' !important;
+
+		}
+
+		/* [data-venn-sets="A_B"]path { fill: brown!important; } */
+		.wenn-floor {
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+
+		.venn {}
+
+		.venntooltip {
+			position: absolute;
+			text-align: center;
+			width: 128px;
+			height: 16px;
+			background: #333;
+			color: #ddd;
+			padding: 2px;
+			border: 0px;
+			border-radius: 8px;
+			opacity: 0;
+		}
+
+		.article {
+			position: absolute;
+			width: 200px;
+			color: #333;
+			font-family: 'Barlow', 'Noto Sans TC', 'Noto Sans KR' !important;
+			font-weight: 300;
+			opacity: 0.55
+		}
+
+		.article p {
+			margin: 0;
+		}
+
+		.article .main-title {
+			margin-bottom: 15px;
+		}
+
+		.article .article-item {
+			margin-bottom: 15px;
+		}
+
+		.article .sub-title {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+		}
+
+		.article .sub-title i {
+			display: inline-block;
+			width: 15px;
+			height: 15px;
+			border-radius: 50%;
+			margin-right: 5px;
+		}
+
+		.article .sub-item {
+			color: #888;
+			padding-left: 20px;
+		}
+
+		.position1 {
+			left: 90%;
+			top: 5%;
+		}
+
+		.position2 {
+			left: 100%;
+			top: 35%;
+		}
+
+		.position3 {
+			left: 95%;
+			top: 55%;
+		}
+
+		.position4 {
+			right: 75%;
+			top: 3%;
+		}
+
+		.position5 {
+			right: 90%;
+			top: 20%;
+		}
+
+		.position6 {
+			right: 90%;
+			top: 45%;
+		}
+
+		.position7 {
+			right: 80%;
+			top: 65%;
+		}
+
+		.position1 .dot {
+			background-color: #a4c1dd;
+		}
+
+		.position2 .dot {
+			background: linear-gradient(to right, #a4c1dd, #72b083);
+		}
+
+		.position3 .dot {
+			background-color: #72b083;
+		}
+
+		.position4 .dot {
+			background: linear-gradient(to right, #a4c1dd, #f3ca7e);
+		}
+
+		.position5 .dot {
+			background-color: #f3ca7e;
+		}
+
+		.position6 .dot {
+			background: linear-gradient(to right, #a4c1dd, #f3ca7e, #72b083);
+		}
+
+		.position7 .dot {
+			background: linear-gradient(to right, #f3ca7e, #72b083);
+		}
+
+		@media screen and (max-width:767px) {
+			.wenn-father {
+				width: 300px;
+				height: 450px;
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				position: relative;
+				background: url(images/bg.svg) center no-repeat;
+				background-size: contain;
+			}
+
+			.article {
+				width: 120px;
+				font-size: 10px;
+			}
+
+			.article .sub-title i {
+				width: 10px;
+				height: 10px;
+				margin-right: 3px;
+			}
+
+			.article .sub-item {
+				color: #888;
+				padding-left: 13px;
+			}
+		}
+
+		@media screen and (min-width:768px) and (max-width:1200px) {
+			.wenn-father {
+				width: 400px;
+				height: 420px;
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				position: relative;
+				background: url(images/bg.svg) center no-repeat;
+				background-size: contain;
+			}
+		}
+
+		/* 大于 1200px  */
+		@media screen and (min-width:1201px) {
+			.wenn-father {
+				width: 400px;
+				height: 600px;
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				position: relative;
+				background: url(images/bg.svg) center no-repeat;
+				background-size: contain;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="wenn-floor">
+		<div class="wenn-father">
+			<div id="venn" class="venn"></div>
+			<div class="article position1">
+				<p class="main-title">Online Community</p>
+				<div class="article-item">
+					<p class="sub-title"><i class="dot"></i>Virtual intimacy</p>
+					<p class="sub-item">CSCW'23</p>
+				</div>
+				<div class="article-item">
+					<p class="sub-title"><i class="dot"></i>Chat-based Cosplay Community</p>
+					<p class="sub-item">IDC'23 WIP</p>
+				</div>
+			</div>
+			<div class="article position2">
+				<p class="main-title">AI for Social goods</p>
+				<div class="article-item">
+					<p class="sub-title"><i class="dot"></i>Culture Gesture Dataset</p>
+					<p class="sub-item">MM'23</p>
+				</div>
+				<div class="article-item">
+					<p class="sub-title"><i class="dot"></i>Pteacher</p>
+					<p class="sub-item">CHI'21 MM'21(demo)</p>
+				</div>
+				<div class="article-item">
+					<p class="sub-title"><i class="dot"></i>Ebook</p>
+					<p class="sub-item">JCDL'20</p>
+				</div>
+			</div>
+		
+			<div class="article position5">
+				<p class="main-title">Responsible and Wellbeing-oriented</p>
+			
+				<div class="article-item">
+					<p class="sub-title"><i class="dot"></i>Privacy Sanbox</p>
+					<p class="sub-item">CHI'24(under review)</p>
+				</div>
+				<div class="article-item">
+					<p class="sub-title"><i class="dot"></i>EdibleToy</p>
+					<p class="sub-item">IDC'23</p>
+				</div>
+				<div class="article-item">
+					<p class="sub-title"><i class="dot"></i>DHH & gig work </p>
+					<p class="sub-item">CHI'24 (under review)</p>
+				</div>
+			</div>
+			<!-- <div class="article position6">
+				<p class="main-title">Create to Learn Nature</p>
+				<div class="article-item">
+					<p class="sub-title"><i class="dot"></i>Bio Sketchbook</p>
+					<p class="sub-item">IDC'21 WIP,IDC'23</p>
+				</div>
+			</div>
+			<div class="article position7">
+				<p class="main-title">Create to Learn Nature</p>
+				<div class="article-item">
+					<p class="sub-title"><i class="dot"></i>Bio Sketchbook</p>
+					<p class="sub-item">IDC'21 WIP,IDC'23</p>
+				</div>
+			</div> -->
+		</div>
+
+	</div>
+</body>
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="js/venn.js"></script>
+
+<script>
+	var wW = window.innerWidth;
+	var h = ''
+	if (wW < 768) {
+		h = 265
+	} else if (wW < 1200) {
+		h = 300
+	} else {
+		h = 300
+	}
+
+
+
+
+	// 使
+	var sets = [{
+		"sets": ["A"],
+		"label": "Responsible and Wellbeing-oriented Practices & Systems",
+		"size": 14000,
+		"position": 5
+	},
+	{
+		"sets": ["B"],
+		"label": "Online Community & identify",
+		"size": 9000,
+		"position": 1
+	},
+	{
+		"sets": ["C"],
+		"label": "AI for cognition & social goods",
+		"size": 12000,
+		"position": 2
+	},
+	{
+		"sets": ['A', 'B'],
+		"size": 1000,
+		"position": 4
+	},
+	{
+		"sets": ['A', 'C'],
+		"size": 1000,
+		"position": 7
+	},
+	{
+		"sets": ['B', 'C'],
+		"size": 1000,
+		"position": 3
+	},
+	{
+		"sets": ['A', 'B', 'C'],
+		"size": 200,
+		"position": 6
+	}
+	]
+
+	var chart = venn.VennDiagram()
+		.width(h)
+		.height(h);
+
+	var div = d3.select("#venn")
+	div.datum(sets).call(chart);
+
+	var tooltip = d3.select("body").append("div")
+		.attr("class", "venntooltip");
+
+	div.selectAll("path")
+		.style("stroke-opacity", 1)
+		.style("stroke", "#fff")
+		.style("stroke-width", 0.2)
+	
+	div.selectAll("text")
+		.style("font-family", "'Noto Sans TC'") 
+		.each(function (d, i) {
+    //    d3.select(this).attr("dy", ".50em");
+   });
+
+	div.selectAll("g")
+		.on("mouseover", function (d, i) {
+			// sort all the areas relative to the current item
+			venn.sortAreas(div, d);
+
+			// Display a tooltip with the current size
+			// tooltip.transition().duration(400).style("opacity", .9);
+			// tooltip.text(d.size);
+
+			// highlight the current path
+			var selection = d3.select(this).transition("tooltip").duration(400);
+			selection.select("path")
+				.style("fill-opacity", d.sets.length == 1 ? .45 : .3)
+				.style("stroke-opacity", 1);
+
+			document.getElementsByClassName("position" + d.position)[0].style.opacity = 1
+
+		})
+
+		.on("mousemove", function () {
+			// tooltip.style("left", (d3.event.pageX) + "px")
+			// 	.style("top", (d3.event.pageY - 28) + "px");
+		})
+
+		.on("mouseout", function (d, i) {
+			// tooltip.transition().duration(400).style("opacity", 0);
+			var selection = d3.select(this).transition("tooltip").duration(400);
+			selection.select("path")
+				.style("fill-opacity", d.sets.length == 1 ? .3 : 0)
+				.style("stroke-opacity", 0);
+			document.getElementsByClassName("position" + d.position)[0].style.opacity = 0.55
+		});
+</script>
+
+</html>

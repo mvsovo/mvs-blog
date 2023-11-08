@@ -14,8 +14,8 @@ title: Weijun Li
             <img src="{{ '/assets/images/main/mvs.svg' | relative_url }}" alt="" class="profile-image" id="hero">
         </div>
         <div class="col-12 col-md-9 align-self-center text-sm smaller-text">
-            <h4>Wejun Li</h4>
-            <p class="mt-2">I am an HCI researcher and am now a second-year master student at <a
+            <h4>Weijun Li</h4>
+            <p class="mt-2">I am an HCI researcher and am now a last-year master student at <a
                     href="http://www.idi.zju.edu.cn/">International Design Institute</a>, <a
                     href="http://www.en.cs.zju.edu.cn/">School of Computer Science and Technology</a> of <a
                     href="https://www.zju.edu.cn/english/">Zhejiang University</a>, advised by <a
@@ -25,9 +25,8 @@ title: Weijun Li
             </p>
             <p>
                 I do Human-Computer Interaction (HCI) and Computer-Supported Cooperative Work (CSCW) research that
-                focuses on <a>well-being</a>, <a>health</a>, and <a>digital identity</a> within digital contexts.
-                Specifically, I examine how online-presatation influence well-being, relationships, privacy and
-                identity. I am also curious about how we can design and build new <a>systems</a>, or curate existing
+                focuses on <a>well-being</a>, <a>privacy</a>, and <a>identity</a> within digital contexts.
+                I am also curious about how we can design and build new <a>responsible and wellbeing-oriented socio-technical systems</a>, or curate existing
                 ones to better support the <a>well-being of a broader demographic</a>.
             <p> Outside of research, you can find me <a href="https://www.strava.com/athletes/44462387">cycling</a> in
                 the nearest mountain. My friends and I also started an encrypted email,<a
@@ -45,41 +44,69 @@ title: Weijun Li
 
 
 <!-- News -->
-<div class="container pb-3 px-0 px-md-3" id="news">
-    <h4 style="font-weight: 600 !important;;">News</h4>
-    <div class="row mt-4">
-        {% for new in news limit: 4 %}
-        <div class="col-12">
-            <span class="mb-1" style="font-size: .8rem; font-weight: 200 !important; display:inline-block"> {{ new.date
-                | date: "%B %Y" }}</span>
-            <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important; display:inline-block;">{{ new.title
-                }}</p>
-        </div>
-        {% endfor %}
-        <details style="display: inline-block; font-size: 16px">
-            <summary style="padding-left:5px; margin-top:5px; margin-bottom:-10px; font-size: 16px"><span
-                    style="font-size: 14px"> See More</span></summary>
-            <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important; display:inline-block">
-            {% for new in news offset: 4 %}
-            <div class="col-12">
-                <span class="mb-1" style="font-size: .8rem; font-weight: 200 !important; display:inline-block">{{
-                    new.date | date: "%B %Y" }} </span>
-                <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important; display:inline-block">{{
-                    new.title }}</p>
+
+
+<div class="container py-3">
+    <div class="row">
+        <div class="container pb-3 px-0 px-md-3 col-md-3" id="news">
+            <p style="font-weight: 500 !important; text-transform: uppercase;">News</p>
+            <div class="row mt-4">
+                {% for new in news limit: 4 %}
+                <div class="col-12">
+                    <span class="mb-1" style="font-size: .8rem; font-weight: 200 !important; display:inline-block"> {{
+                        new.date
+                        | date: "%B %Y" }}</span>
+                    <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important; display:inline-block;">{{
+                        new.title
+                        }}</p>
+                </div>
+                {% endfor %}
+                <details style="display: inline-block; font-size: 16px">
+                    <summary style="padding-left:5px; margin-top:5px; margin-bottom:-10px; font-size: 16px"><span
+                            style="font-size: 14px"> See More</span></summary>
+                    <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important; display:inline-block">
+                        {% for new in news offset: 4 %}
+                    <div class="col-12">
+                        <span class="mb-1"
+                            style="font-size: .8rem; font-weight: 200 !important; display:inline-block">{{
+                            new.date | date: "%B %Y" }} </span>
+                        <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important; display:inline-block">{{
+                            new.title }}</p>
+                    </div>
+                    {% endfor %}
+
+                </details>
             </div>
-            {% endfor %}
 
-        </details>
+        </div>
+        <div class="container pb-3 px-0 px-md-3 col-md-9">
+            <p style="font-weight: 500 !important; text-transform: uppercase;">Research Interest</p>
+
+
+                <img src="{{ '/assets/images/main/research.png' | relative_url }}" alt="" class="research-image" id="research">
+                
+            <p>
+                With an interdisciplinary background in Information Science, Computer Science and Design, I really curious about how we can design and build new <a>responsible and wellbeing-oriented socio-technical systems</a>, or curate existing
+                ones to better support the <a>well-being of a broader demographic</a>. I am fortunate to have worked with distinguished professors such as  <a
+                href="https://toby.li/">Toby Jia-jun Li</a>,<a
+                href="http://yaxingyao.com/index.html">Yaxing Yao</a>,<a
+                href="https://www.guanyundesign.com/">Guanyun Wang</a>,<a
+                href="https://hcsi.cs.tsinghua.edu.cn/">Jia Jia</a>,
+            
+
+
+            </p>
+        </div>
+
     </div>
-
 </div>
 
 
 <!-- Publication -->
 <div class="container pb-3 px-0 px-md-3" id="research">
-    <h4 style="font-weight: 600 !important; padding-bottom: .5rem;">Research</h4>
-    <p style="font-size:.85rem">
-        <!-- Research Statement -->
+    <p style="font-weight: 500 !important; text-transform: uppercase;">Publications</p>
+    <p style="font-size:.85rem;font-weight: 300">     This is a catalog of my papers that have been either PUBLISHED or made available on ARXIV. It does not contain any manuscripts that have not been uploaded to ARXIV. These papers are organized by their publication date and ranked according to my PERSONAL PREFERENCE. Those not explicitly labeled are FULL papers.
+    </p>
 
     <div class="row mt-4">
 
@@ -106,12 +133,14 @@ title: Weijun Li
                         <p class="mb-2" style="font-size: .95rem; font-weight: 200 !important;">{% for author in
                             paper.authors %}{% if author == "Weijun Li" or author == "Weijun Li*" %}<a
                                 style="font-weight: 400;" href="#" data-toggle="tooltip" title="Some tooltip text!">{{
-                                author }}</a>{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {% endunless
+                                author }}</a>{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {%
+                            endunless
                             %}{% endfor %}</p>
                         <p class="mb-1" style="font-size: .9rem; font-weight: 200 !important;"><span
                                 style="font-weight: 400;font-size:.8rem;background-color:hsla(21, 100%, 82%, 0.509); ">{{
-                                paper.venue }}.{% if paper.note %}({{ paper.note }}){% endif %}</span>{% if paper.abstract %} {{ paper.abstract }}{% endif %}</p>
-                                
+                                paper.venue }} {% if paper.note %} ({{ paper.note }}){% endif %}</span>{% if
+                            paper.abstract %} {{ paper.abstract }}{% endif %}</p>
+
                         {% if paper.award %}
                         <p class="mb-2" style="font-size: .95rem; font-weight: 400 !important;"><i
                                 class="fa-solid fa-medal"></i>&nbsp;&nbsp;{{ paper.award }}</p>
@@ -145,26 +174,73 @@ title: Weijun Li
                 {% endfor %}
             </div>
         </div>
-        <!-- <div class="container">
-        <p style="font-weight: 500 !important; text-transform: uppercase;">Recent projects</p>
-        <div class="row mt-4">
-            {% for project in projects limit: 8 %}
-            <div class="col-6 col-md-3 mb-3 mb-md-0 align-self-center">
-                <img src="{{ '/assets/images/project/' | append: project.image | relative_url }}" alt="" style="height: auto; width: 100%;">
-                <p class="mt-1 mt-md-2" style="font-size: .9rem; font-weight: 400 !important; line-height: 1.2rem; text-align: center;">{{ project.title }}</p>
-            </div>
-            {% endfor %}
-        </div>
-        <div class="d-flex flex-row-reverse mt-4">
-            <a href="{{ 'project' | relative_url }}" style="font-size: .95rem; font-weight: 500 !important;">> View All</a>
-        </div>
+
     </div>
-    
-</div> -->
+</div>
+
+{% assign projects = site.data.project.project %}
+
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+
+<div class="container py-4">
+    <p style="font-weight: 500 !important; text-transform: uppercase;">Project</p>
+    <p style="font-size:.85rem;font-weight: 300">     Here's a list of my projects. They're mostly past works connected to research but not purely research endeavors and some almost-finished research projects I'm still working on. (UPDATING!)
+
+    <div class="row mt-3 g-3 grid">
+        {% for proj in projects %}
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 grid-item">
+            <div class="archive-container" data-bs-toggle="modal" data-bs-target="#modal{{ forloop.index }}">
+                <img class="archive-img" src="{{ proj.image | prepend: '/assets/images/project/' | relative_url }}">
+                <div class="archive-container-inner">
+                    <p class="archive-title">{{ proj.title }}</p>
+                    <p class="archive-description">{{ proj.description }}</p>
+                    <div class="tags">
+                      <p>
+                        {% for tag in proj.tags %}
+                        <a title="" href="">{{ tag }}</a>
+                        {% endfor %}
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal{{ forloop.index }}" tabindex="-1" aria-labelledby="exampleModal{{ forloop.index }}" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                    <div style="display: block !important">
+                        <h5 class="modal-title" id="exampleModalLabel">{{ proj.title }}</h5>
+                        <p class="modal-description">{{ proj.description }}</p>
+                        <p class="modal-link">{% if proj.paper %}<a href="{% if proj.paper contains 'http' %} {{ proj.paper }} {% else %} /assets/pdf/{{ proj.paper }} {% endif %}"><i class="fas fa-book"></i>&nbsp; Paper</a> &nbsp;&nbsp;&nbsp; {% endif %}{% if proj.video %}<a href="{{ proj.video }}"><i class="fas fa-play"></i>&nbsp; Video</a> &nbsp;&nbsp;&nbsp; {% endif %}{% if proj.slide %}<a href="/assets/pdf/{{ proj.slide }}"><i class="fas fa-poll-h"></i>&nbsp; Slide</a> &nbsp;&nbsp;&nbsp; {% endif %}{% if proj.appstore %}<a href="{{ proj.appstore }}"><i class="fab fa-app-store-ios"></i>&nbsp; App Store</a> &nbsp;&nbsp;&nbsp; {% endif %}{% if proj.code %}<a href="{{ proj.code }}"><i class="fab fa-github"></i>&nbsp; Code</a> &nbsp;&nbsp;&nbsp; {% endif %}{% if proj.link %}<a href="{{ proj.link }}"><i class="fas fa-external-link"></i>&nbsp; Link</a>{% endif %}</p>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    {{ proj.detail | replace: 'site.baseurl', site.baseurl }}
+                </div>
+              </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<script>
+    var grid = document.querySelector('.grid');
+    var msnry = new Masonry( grid, {
+        percentPosition: true,
+        itemSelector: '.grid-item'
+    });
+    imagesLoaded( grid ).on( 'progress', function() {
+        msnry.layout();
+    });
+
+</script>
 
 
-        <style>
-            /* .smaller-text h4 {
+<style>
+    /* .smaller-text h4 {
          font-size: 0.9 em;
         }
         
@@ -172,92 +248,92 @@ title: Weijun Li
          font-size: 0.85em;
     } */
 
-            .cryptedmail:after {
-                content: attr(data-name) "@" attr(data-domain) "." attr(data-tld);
-            }
+    .cryptedmail:after {
+        content: attr(data-name) "@" attr(data-domain) "." attr(data-tld);
+    }
 
-            .profile-image {
-                width: 100%;
-                height: auto;
-                padding: 0 2.5rem;
-            }
+    .profile-image {
+        width: 100%;
+        height: auto;
+        padding: 0 2.5rem;
+    }
 
-            @media screen and (max-width: 1200px) {
-                .profile-image {
-                    padding: 0 1rem !important;
-                }
-            }
+    @media screen and (max-width: 1200px) {
+        .profile-image {
+            padding: 0 1rem !important;
+        }
+    }
 
-            @media screen and (max-width: 991px) {
-                .profile-image {
-                    padding: 0 .5rem !important;
-                }
-            }
+    @media screen and (max-width: 991px) {
+        .profile-image {
+            padding: 0 .5rem !important;
+        }
+    }
 
-            @media screen and (max-width: 575px) {
-                .profile-image {
-                    width: 50% !important;
-                    display: block;
-                    margin-left: auto;
-                    margin-right: auto;
-                    padding: 0 !important;
-                }
-            }
+    @media screen and (max-width: 575px) {
+        .profile-image {
+            width: 50% !important;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 !important;
+        }
+    }
 
-            .home_img:hover img {
-                cursor: pointer;
-            }
+    .home_img:hover img {
+        cursor: pointer;
+    }
 
-            .home_img:hover img:nth-child(1) {
-                display: none;
-            }
+    .home_img:hover img:nth-child(1) {
+        display: none;
+    }
 
-            .home_img:hover img:nth-child(2) {
-                display: block;
-            }
+    .home_img:hover img:nth-child(2) {
+        display: block;
+    }
 
-            .c {
-                display: none;
-            }
+    .c {
+        display: none;
+    }
 
-            p a {
-                position: relative;
-                background-image: linear-gradient(rgba(251, 140, 36, 0.31), rgba(255, 105, 24, 0.251));
-                background-repeat: no-repeat;
-                background-size: 100% 30%;
-                background-position: 0 95%;
-                transition: background-position 200ms cubic-bezier(0, 0.8, 0.13, 1), background-size 200ms cubic-bezier(0, 0.8, 0.13, 1);
-                padding: 2px 0;
-            }
+    p a {
+        position: relative;
+        background-image: linear-gradient(rgba(251, 140, 36, 0.31), rgba(255, 105, 24, 0.251));
+        background-repeat: no-repeat;
+        background-size: 100% 30%;
+        background-position: 0 95%;
+        transition: background-position 200ms cubic-bezier(0, 0.8, 0.13, 1), background-size 200ms cubic-bezier(0, 0.8, 0.13, 1);
+        padding: 2px 0;
+    }
 
-            p a:hover {
-                background-size: 100% 100%;
-            }
+    p a:hover {
+        background-size: 100% 100%;
+    }
 
-            .row_img>div {
-                margin: 13px 0;
-                min-height: 150px;
-            }
+    .row_img>div {
+        margin: 13px 0;
+        min-height: 150px;
+    }
 
-            .project-view {
-                padding-top: .5rem;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
+    .project-view {
+        padding-top: .5rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
-            @media (min-width:48.0625em) {
-                .project-view {
-                    justify-content: center;
-                }
-            }
+    @media (min-width:48.0625em) {
+        .project-view {
+            justify-content: center;
+        }
+    }
 
-            .item:last-child>hr {
-                display: none;
-            }
-        </style>
+    .item:last-child>hr {
+        display: none;
+    }
+</style>
 
-        <!-- <script>
+<!-- <script>
     var musics = [
         {
             "file": "love_dive",
