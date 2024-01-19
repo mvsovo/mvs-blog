@@ -12,7 +12,7 @@ publication:
           - Yaxing Yao
           - Toby Jia-jun Li
         id: chi24_sandbox
-        venue: Submitted to CHI 24 
+        venue: CHI 24 
         venue_full: ''
         note: arxiv
         video: GDO5anAjTG8
@@ -22,7 +22,31 @@ publication:
            - "Wellbeing"
            - "CSCW"
            - "AI Tools"
+        featured: true  
+
+  - year: '2024'
+    pubs:
+      - title: Practices and Challenges of Delivering Among Deaf or Hard of Hearing Couriers
+        image: dhhd.png
+        gif: dhhd.png
+        authors:
+          - Shi Chen
+          - Xiaodong Wang
+          - Weijun Li
+          - Jiangao Zhang
+          - Yuge Qi
+          - Jiaqi Teng
+          - Zhihan Zeng
+        id: chi24_dhhd
+        venue: CHI 2024 - 🎉 As a TA, I led this project in a sustainable design course, guiding it from idea generation to final writing, and mentored all students involved-(except for the first author, my advisor and also the course instructor).
+        venue_full: ''
+        abstract: This paper explores the experiences of Deaf and Hard of Hearing (DHH) food delivery workers in China. We focus on their motivations, like better pay and community belonging, and their use of delivery platform tools, such as AI voice calls, for communication. Despite technological aids, human intervention remains important. We identify challenges such as safety risks, multitasking complexities, and mistrust in AI voice calls. Our findings offer insights for designing inclusive delivery platforms and broader implications for employment opportunities for DHH individuals, particularly in developing countries.
+        category: 
+          - "Responsibility"
+          - "Wellbeing"
+          - "CSCW"
         featured: true
+
 
   - year: '2023'
     pubs:
