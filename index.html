@@ -15,25 +15,26 @@ title: Weijun Li
         </div>
         <div class="col-12 col-md-9 align-self-center text-sm smaller-text">
             <h4>Weijun Li</h4>
-            <p class="mt-2">I am an HCI researcher and am now a final-year master student at <a
-                    href="http://www.idi.zju.edu.cn/">International Design Institute</a>, <a
-                    href="http://www.en.cs.zju.edu.cn/">School of Computer Science and Technology</a> of <a
-                    href="https://www.zju.edu.cn/english/">Zhejiang University</a>, advised by <a
-                    href="https://person.zju.edu.cn/sly">Lingyun Sun</a> and <a
-                    href="http://www.idi.zju.edu.cn/member/631.html">Shi Chen</a>.
+            <p class="mt-2">I'm a first year Informatics PhD student at University of California, Irvine, working in the
+                <a href="https://depstein.net/pielab">PIE LAB</a> with <a href="https://depstein.net/">Prof. Daniel
+                    Epstein</a>.
+                My research interests span the broad fields of Human-Computer Interaction (HCI) and
+                Computer-Supported Cooperative Work (CSCW), with a particular focus on <a>personal informatics</a>. I
+                aim to design and develop responsible, well-being-oriented technologies.</p>
 
-            </p>
-            <p>
-                I do Human-Computer Interaction (HCI) and Computer-Supported Cooperative Work (CSCW) research with a goal to design and develop new <a>responsible and wellbeing-oriented social technologies</a>.My methodology includes: (1) Qualitative methods like interviews and content analysis; (2) Quantitative methods such as surveys and social media data analysis to study user patterns; (3) Designing and building systems. Before my focus on HCI, I was active in <a>algorithm competitions</a>  and <a>accumulated experience as a full-stack developer</a> during my undergraduate studies.</p>
+            <p>Before UCI, I worked on HCI and design projects at Zhejiang University with Prof. Lingyun Sun and Prof.
+                Shi Chen. Earlier, I was active in <a>algorithm competitions</a> and <a>accumulated experience as a
+                    full-stack developer</a> during my undergraduate studies.</p>
+
             <p> Outside of research, you can find me <a href="https://www.strava.com/athletes/44462387">cycling</a> in
-                the nearest mountain. My friends and I also started an encrypted email,<a
-                    href="https://metamail.ink/">METAMAIL</a> and received several rounds of fundraising investment.
+                the nearest mountain. Feel free to reach out if you’d like to chat about research or cycling!
             </p>
 
-            <a href="#" class="cryptedmail" data-name="mvs" data-domain="zju" data-tld="edu"
+            <a href="#" class="cryptedmail" data-name="weijunl3" data-domain="uci" data-tld="edu"
                 onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;">
                 <i class="fa-solid fa-envelope" style="margin-right: .3rem;"></i>
             </a>
+
             </p>
         </div>
     </div>
@@ -45,10 +46,10 @@ title: Weijun Li
 
 <div class="container py-3">
     <div class="row">
-        <div class="container pb-3 px-0 px-md-3 col-md-3" id="news">
+        <div class="container pb-3 px-0 px-md-3" id="news">
             <p style="font-weight: 500 !important; text-transform: uppercase;">News</p>
             <div class="row mt-4">
-                {% for new in news limit: 6 %}
+                {% for new in news limit: 3 %}
                 <div class="col-12">
                     <span class="mb-1" style="font-size: .8rem; font-weight: 200 !important; display:inline-block"> {{
                         new.date
@@ -76,28 +77,6 @@ title: Weijun Li
             </div>
 
         </div>
-        <div class="container pb-3 px-0 px-md-3 col-md-9">
-            <p style="font-weight: 500 !important; text-transform: uppercase;">Research Interest</p>
-
-
-                <img src="{{ '/assets/images/main/Research.png'}}" alt="" class="research-image" id="research">
-                <p style="margin-top: 0; text-align: center; color: gray; font-size: 12px;">
-                    This Venn diagram is inspired by the esteemed work of <a href="https://zhangchaodesign.com/" target="_blank">Chao Zhang</a> !
-                </p>
-                
-            <p>
-                With an interdisciplinary background in Information Science, Computer Science and Design, I really curious about how we can design and build new <a>responsible and wellbeing-oriented socio-technical systems</a>, or curate existing
-                ones to better support the <a>well-being of a broader demographic</a>. Currently, I focus on <a>well-being</a>, <a>privacy</a> and <a>identity</a> within digital context. I am fortunate to have worked with distinguished professors such as  <a
-                href="https://toby.li/">Toby Jia-jun Li</a>,<a
-                href="http://yaxingyao.com/index.html">Yaxing Yao</a>,<a
-                href="https://www.guanyundesign.com/">Guanyun Wang</a>,<a
-                href="https://hcsi.cs.tsinghua.edu.cn/">Jia Jia</a>,
-            
-
-
-            </p>
-        </div>
-
     </div>
 </div>
 
@@ -105,7 +84,10 @@ title: Weijun Li
 <!-- Publication -->
 <div class="container pb-3 px-0 px-md-3" id="research">
     <p style="font-weight: 500 !important; text-transform: uppercase;">Publications</p>
-    <p style="font-size:.85rem;font-weight: 300">     This is a catalog of my papers that have been either PUBLISHED or made available on ARXIV. It does not contain any manuscripts that have not been uploaded to ARXIV. These papers are organized by their publication date and ranked according to my personal preference. Those not explicitly labeled are full papers.
+    <p style="font-size:.85rem;font-weight: 300"> This is a catalog of my papers that have been either PUBLISHED or made
+        available on ARXIV. It does not contain any manuscripts that have not been uploaded to ARXIV. These papers are
+        organized by their publication date and ranked according to my personal preference. Those not explicitly labeled
+        are full papers.
     </p>
 
     <div class="row mt-4">
@@ -185,7 +167,8 @@ title: Weijun Li
 
 <div class="container py-4">
     <p style="font-weight: 500 !important; text-transform: uppercase;">Project</p>
-    <p style="font-size:.85rem;font-weight: 300">     Here's a list of my projects. They're mostly past works connected to research but not purely research endeavors and some almost-finished research projects I'm still working on. 
+    <p style="font-size:.85rem;font-weight: 300"> Here's a list of my projects. They're mostly past works connected to
+        research but not purely research endeavors and some almost-finished research projects I'm still working on.
 
     <div class="row mt-3 g-3 grid">
         {% for proj in projects %}
@@ -196,30 +179,42 @@ title: Weijun Li
                     <p class="archive-title">{{ proj.title }}</p>
                     <p class="archive-description">{{ proj.description }}</p>
                     <div class="tags">
-                      <p>
-                        {% for tag in proj.tags %}
-                        <a title="" href="">{{ tag }}</a>
-                        {% endfor %}
-                      </p>
+                        <p>
+                            {% for tag in proj.tags %}
+                            <a title="" href="">{{ tag }}</a>
+                            {% endfor %}
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="modal{{ forloop.index }}" tabindex="-1" aria-labelledby="exampleModal{{ forloop.index }}" aria-hidden="true">
+        <div class="modal fade" id="modal{{ forloop.index }}" tabindex="-1"
+            aria-labelledby="exampleModal{{ forloop.index }}" aria-hidden="true">
             <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                    <div style="display: block !important">
-                        <h5 class="modal-title" id="exampleModalLabel">{{ proj.title }}</h5>
-                        <p class="modal-description">{{ proj.description }}</p>
-                        <p class="modal-link">{% if proj.paper %}<a href="{% if proj.paper contains 'http' %} {{ proj.paper }} {% else %} /assets/pdf/{{ proj.paper }} {% endif %}"><i class="fas fa-book"></i>&nbsp; Paper</a> &nbsp;&nbsp;&nbsp; {% endif %}{% if proj.video %}<a href="{{ proj.video }}"><i class="fas fa-play"></i>&nbsp; Video</a> &nbsp;&nbsp;&nbsp; {% endif %}{% if proj.slide %}<a href="/assets/pdf/{{ proj.slide }}"><i class="fas fa-poll-h"></i>&nbsp; Slide</a> &nbsp;&nbsp;&nbsp; {% endif %}{% if proj.appstore %}<a href="{{ proj.appstore }}"><i class="fab fa-app-store-ios"></i>&nbsp; App Store</a> &nbsp;&nbsp;&nbsp; {% endif %}{% if proj.code %}<a href="{{ proj.code }}"><i class="fab fa-github"></i>&nbsp; Code</a> &nbsp;&nbsp;&nbsp; {% endif %}{% if proj.link %}<a href="{{ proj.link }}"><i class="fas fa-external-link"></i>&nbsp; Link</a>{% endif %}</p>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div style="display: block !important">
+                            <h5 class="modal-title" id="exampleModalLabel">{{ proj.title }}</h5>
+                            <p class="modal-description">{{ proj.description }}</p>
+                            <p class="modal-link">{% if proj.paper %}<a
+                                    href="{% if proj.paper contains 'http' %} {{ proj.paper }} {% else %} /assets/pdf/{{ proj.paper }} {% endif %}"><i
+                                        class="fas fa-book"></i>&nbsp; Paper</a> &nbsp;&nbsp;&nbsp; {% endif %}{% if
+                                proj.video %}<a href="{{ proj.video }}"><i class="fas fa-play"></i>&nbsp; Video</a>
+                                &nbsp;&nbsp;&nbsp; {% endif %}{% if proj.slide %}<a
+                                    href="/assets/pdf/{{ proj.slide }}"><i class="fas fa-poll-h"></i>&nbsp; Slide</a>
+                                &nbsp;&nbsp;&nbsp; {% endif %}{% if proj.appstore %}<a href="{{ proj.appstore }}"><i
+                                        class="fab fa-app-store-ios"></i>&nbsp; App Store</a> &nbsp;&nbsp;&nbsp; {%
+                                endif %}{% if proj.code %}<a href="{{ proj.code }}"><i class="fab fa-github"></i>&nbsp;
+                                    Code</a> &nbsp;&nbsp;&nbsp; {% endif %}{% if proj.link %}<a
+                                    href="{{ proj.link }}"><i class="fas fa-external-link"></i>&nbsp; Link</a>{% endif
+                                %}</p>
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-body">
+                        {{ proj.detail | replace: 'site.baseurl', site.baseurl }}
+                    </div>
                 </div>
-                <div class="modal-body">
-                    {{ proj.detail | replace: 'site.baseurl', site.baseurl }}
-                </div>
-              </div>
             </div>
         </div>
         {% endfor %}
@@ -228,11 +223,11 @@ title: Weijun Li
 
 <script>
     var grid = document.querySelector('.grid');
-    var msnry = new Masonry( grid, {
+    var msnry = new Masonry(grid, {
         percentPosition: true,
         itemSelector: '.grid-item'
     });
-    imagesLoaded( grid ).on( 'progress', function() {
+    imagesLoaded(grid).on('progress', function () {
         msnry.layout();
     });
 
