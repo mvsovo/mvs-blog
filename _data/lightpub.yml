@@ -1,0 +1,110 @@
+publication:
+
+  - year: '2023'
+    pubs:
+      - title: I Never Envy Anyone, for I Have Already Built a Kingdom With My Fingertips, Exploring Teenagers’ Experience in Chat-based Cosplay Community
+        image: kcos.png
+        gif: kcos.png
+        authors:
+          - Weijun Li
+          - Yaohua Bu
+          - Suqi Lou
+          - Shi Chen
+          - Lingyun Sun
+          - Changyuan Yang
+        id: acm_idc2023_cosplay_paper 
+        venue: IDC 23 
+        venue_full: Proceedings of the 22nd Annual ACM Interaction Design and Children Conference
+        abstract: This paper examines teenagers' chat-based cosplay in China. We found four primary motivations and their main practice. Adolescents perceived character presentation as key and devoted significant effort to refine their characters for higher consistency. We spotlight the interplay between social relationships and story creation, and also note both positive and negative experiences within the community.
+        category:  
+          - "Responsibility"
+          - "Wellbeing"
+          - "CSCW"
+        featured: true
+
+  - year: '2023'
+    pubs:
+      - title: EdibleToy:Empowering Children to Create Their Own Meals with a DIY Wafer Paper Kit
+        image: EdibleToy.png
+        gif: kit.gif
+        authors:
+          - Yilin Shao
+          - Boyu Feng
+          - Yingpin Chen
+          - Yue Yang
+          - Weijun Li
+          - Yifan Yan
+          - Yanan Wang
+          - Ye Tao
+          - Lingyun Sun
+          - Guanyun Wang
+        id: idc2023_edittoy
+        venue: IDC 23
+        video: Z09NrmssyFY
+        venue_full: Proceedings of the 22nd Annual ACM Interaction Design and Children Conference
+        abstract:  Drawing inspiration from shape-changing food research, we propose an approach that combines deformable wafer paper for food preparation. We summarize the principles of wafer paper controllable deformation and develop a toolkit to facilitate its use. We support children increating personalized, transformable food items using this method.
+        category:  
+          - "Wellbeing"
+
+        featured: true
+
+
+  - year: '2021'  
+    pubs:
+      - title: Visual-speech Synthesis of Exaggerated Corrective Feedback
+        image: mmdemo.png
+        gif: mmdemo.png
+        authors:
+          - Yaohua Bu*
+          - Weijun Li*
+          - Tianyi Ma
+          - Shengqi Chen
+          - Jia Jia
+          - Kun Li
+          - Xiaobo Lu
+        id: mm2020_ecf_demo
+        venue: MM 2020 
+        venue_full: Proceedings of the 28th ACM International Conference on Multimedia
+        abstract: We propose a method for exaggerated visual-speech feedback in CAPT. The speech exaggeration is realized by an emphatic speech generation neural network based on Tacotron, while the visual exaggeration is accomplished by ADC Viseme Blending, namely increasing Amplitude of movement, extending the phone’s Duration and enhancing the color Contrast. 
+        category: 
+           - "AI Tools"
+        featured: true
+  - year: '2020'
+    pubs:
+      - title: "An Integrated Method to Build Read-Aiding E-Books Based on Text Mining and Interactive Aesthetics"
+        image: ebook.png
+        gif: ebook.gif
+        id: jcdl2020_ebook_poster
+        video: ohL-t6EBHT8
+        authors:
+          - Weijun Li
+          - Fukai Yang
+          - Ruibing Jia
+          - Renmin Li
+          - Minghao Yin
+        abstract: We propose a four-stage method to build read-aiding e-books directly from text, integrating the technologies in text mining and the ideas in interactive aesthetics. By applying this method, we manage to identify and present multiple complex relationships in the classical Chinese novel Romance of the Three Kingdoms, providing readers with vivid scenes and rich interactions for better comprehension.
+        venue: JCDL 2020
+        venue_full: Proceedings of the ACM/IEEE Joint Conference on Digital Libraries
+        category: JCDL 2020 
+        bibtex: |-
+          @inproceedings{10.1145/3383583.3398587,
+            author = {Li, Weijun and Yang, Fukai and Jia, Ruibing and Li, Renmin and Yin, Minghao},
+            title = {An Integrated Method to Build Read-Aiding E-Books Based on Text Mining and Interactive Aesthetics},
+            year = {2020},
+            isbn = {9781450375856},
+            publisher = {Association for Computing Machinery},
+            address = {New York, NY, USA},
+            url = {https://doi.org/10.1145/3383583.3398587},
+            doi = {10.1145/3383583.3398587},
+            booktitle = {Proceedings of the ACM/IEEE Joint Conference on Digital Libraries in 2020},
+            pages = {509–510},
+            numpages = {2},
+            keywords = {text mining, interactive e-book, information visualization},
+            location = {Virtual Event, China},
+            series = {JCDL '20}
+            }
+        category: 
+           - "AI Tools"
+        featured: true
+
+      

@@ -6,23 +6,29 @@ title: Weijun Li
 {% assign projects = site.data.project.project %}
 {% assign news = site.data.news.list %}
 {% assign publications = site.data.publication.publication %}
+{% assign lightpublications = site.data.lightpub.publication %}
+
 {% assign category = site.data.publication-category %}
+<div class="content-wrapper">
 
 <div class="container py-3">
     <div class="row">
         <div class="col-12 col-md-3 align-self-center mb-4 mb-md-0">
-            <img src="{{ '/assets/images/main/mvs.svg' | relative_url }}" alt="" class="profile-image" id="hero">
+            <img src="{{ '/assets/images/main/profile-i.png' | relative_url }}" alt="" class="profile-image" id="hero">
         </div>
         <div class="col-12 col-md-9 align-self-center text-sm smaller-text">
             <h4>Weijun Li</h4>
-            <p class="mt-2">I'm a first-year Informatics PhD student at  <a href="https://uci.edu/"> 🐜 University of California, Irvine</a>, working in the
-                <a href="https://depstein.net/pielab">🥧PIE LAB</a> with <a href="https://depstein.net/">Prof. Daniel
-                    Epstein</a>.
-                My research interests span the broad fields of Human-Computer Interaction (HCI) and
-                Computer-Supported Cooperative Work (CSCW), with a particular focus on <a>💡personal informatics</a>. I
-                aim to design and develop responsible, well-being-oriented technologies.</p>
-
-            <p>Before UCI, I worked on HCI and design projects at Zhejiang University with Prof. Lingyun Sun and Prof.
+            <p class="mt-2">
+              I am a Human-Computer Interaction (HCI) researcher and a first-year Informatics Ph.D. student at 
+              <a href="https://uci.edu/">🐜 University of California, Irvine</a>, working in the 
+              <a href="https://depstein.net/pielab">🥧 PIE LAB</a> with 
+              <a href="https://depstein.net/">Prof. Daniel Epstein</a>.
+            </p>
+            
+            <p>
+              I focus how to design responsible, well-being-oriented technologies. Currently, my research focuses on 
+              <a href="#">💡 personal informatics</a>, with broader interests in Human-Computer Interaction (HCI) and 
+              Computer-Supported Cooperative Work (CSCW). Previously, I worked on HCI and design projects at Zhejiang University with Prof. Lingyun Sun and Prof.
                 Shi Chen. Earlier, I was active in <a>algorithm competitions</a> and <a>accumulated experience as a
                     full-stack developer</a> during my undergraduate studies.</p>
 
@@ -43,7 +49,7 @@ title: Weijun Li
 
 <!-- News -->
 
-
+<!-- 
 <div class="container py-3">
     <div class="row">
         <div class="container pb-3 px-0 px-md-3" id="news">
@@ -78,17 +84,66 @@ title: Weijun Li
 
         </div>
     </div>
-</div>
+</div> -->
 
+<div class="container py-3">
+    <div class="row">
+      <!-- Left: News -->
+      <div class="col-md-6">
+        <div class="pb-3 px-0 px-md-3" id="news">
+          <p style="font-weight: 500 !important; text-transform: uppercase;">News</p>
+          <div class="row mt-4">
+            {% for new in news limit: 5 %}
+            <div class="col-12">
+              <span class="mb-1" style="font-size: .8rem; font-weight: 200 !important; display:inline-block">
+                {{ new.date | date: "%B %Y" }}
+              </span>
+              <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important; display:inline-block">
+                {{ new.title }}
+              </p>
+            </div>
+            {% endfor %}
+  
+            <details style="display: inline-block; font-size: 16px">
+              <summary style="padding-left:5px; margin-top:5px; margin-bottom:10px; font-size: 16px">
+                <span style="font-size: 14px"> See More</span>
+              </summary>
+              {% for new in news offset: 5 %}
+              <div class="col-12">
+                <span class="mb-1" style="font-size: .8rem; font-weight: 200 !important; display:inline-block">
+                  {{ new.date | date: "%B %Y" }}
+                </span>
+                <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important; display:inline-block">
+                  {{ new.title }}
+                </p>
+              </div>
+              {% endfor %}
+            </details>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Right: Current Work -->
+      <div class="col-md-6">
+        <div class="pb-3 px-2" id="current-work">
+            <p style="font-weight: 500 !important; text-transform: uppercase;">Ongoing Project</p>
+
+          
+          <img src="/assets/images/project/cur.png" alt="Current Work Image"
+               style="width: 100%; border-radius: 8px; margin-bottom: 0.8rem;">
+          
+          <p style="font-size: 0.9rem; font-weight: 300;">
+            Enhancing Food Tracking Practice with LLMs: Towards Goal-Oriented Reflection   (CHI 2025 EA)
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 <!-- Publication -->
 <div class="container pb-3 px-0 px-md-3" id="research">
     <p style="font-weight: 500 !important; text-transform: uppercase;">Publications</p>
-    <p style="font-size:.85rem;font-weight: 300"> This is a catalog of my papers that have been either PUBLISHED or made
-        available on ARXIV. It does not contain any manuscripts that have not been uploaded to ARXIV. These papers are
-        organized by their publication date and ranked according to my personal preference. Those not explicitly labeled
-        are full papers.
-    </p>
+   
 
     <div class="row mt-4">
 
@@ -113,13 +168,13 @@ title: Weijun Li
                         </div>
                         <p class="mb-2" style="font-size: 1rem; font-weight: 400 !important;">{{ paper.title }}</p>
                         <p class="mb-2" style="font-size: .95rem; font-weight: 200 !important;">{% for author in
-                            paper.authors %}{% if author == "Weijun Li" or author == "Weijun Li*" %}<a
-                                style="font-weight: 400;" href="#" data-toggle="tooltip" title="Some tooltip text!">{{
-                                author }}</a>{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {%
+                            paper.authors %}{% if author == "Weijun Li" or author == "Weijun Li*" %}<span
+                                style="font-weight: 400;" data-toggle="tooltip" title="Some tooltip text!">{{
+                                author }}</span>{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {%
                             endunless
                             %}{% endfor %}</p>
                         <p class="mb-1" style="font-size: .9rem; font-weight: 200 !important;"><span
-                                style="font-weight: 400;font-size:.8rem;background-color:hsla(21, 100%, 82%, 0.509); ">{{
+                                style="font-weight: 400;font-size:.8rem;background-color:hsla(208, 100%, 82%, 0.294); ">{{
                                 paper.venue }} {% if paper.note %} ({{ paper.note }}){% endif %}</span>{% if
                             paper.abstract %} {{ paper.abstract }}{% endif %}</p>
 
@@ -160,65 +215,87 @@ title: Weijun Li
     </div>
 </div>
 
+
+
+<!-- Publication -->
+<div class="container pb-3 px-0 px-md-3" id="research">
+    <p style="font-weight: 500 !important; text-transform: uppercase;">Lightly reviewed publications</p>
+
+    <div class="row mt-4">
+
+        <div class="project-view">
+            <div class="row mt-4" style="flex: 0 0 100%;" id="publications">
+                {% for pub in lightpublications %}
+
+                <div
+                    class="item row row_img px-0 {% for cat_each in paper.category %}tag-{{ cat_each | replace: ' / ', '' }} {% endfor %} ">
+                    {% for paper in pub.pubs %}
+                    <div class="col-md-3 home_img" style="display: flex; align-items: center;justify-content: center;">
+                        <img src="{{ '/assets/images/project/' | append: paper.image | relative_url }}" width="100%"
+                            alt="">
+                        <img src="{{ '/assets/images/project/' | append: paper.gif | relative_url }}" width="100%"
+                            class="c" alt="">
+                    </div>
+                    <div class="col-md-9">
+                        <div class=" px-0 mb-2 {% unless forloop.first %}mt-5{% endunless %}">
+                            <span style="font-weight: 400">{{ pub.year }}</span>
+                        </div>
+                        <p class="mb-2" style="font-size: 1rem; font-weight: 400 !important;">{{ paper.title }}</p>
+                        <p class="mb-2" style="font-size: .95rem; font-weight: 200 !important;">{% for author in
+                            paper.authors %}{% if author == "Weijun Li" or author == "Weijun Li*" %}<span
+                                style="font-weight: 400;" data-toggle="tooltip" title="Some tooltip text!">{{
+                                author }}</span>{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {%
+                            endunless
+                            %}{% endfor %}</p>
+                        <p class="mb-1" style="font-size: .9rem; font-weight: 200 !important;"><span
+                                style="font-weight: 400;font-size:.8rem;background-color:hsla(208, 100%, 82%, 0.294); ">{{
+                                paper.venue }} {% if paper.note %} ({{ paper.note }}){% endif %}</span>{% if
+                            paper.abstract %} {{ paper.abstract }}{% endif %}</p>
+
+                        {% if paper.award %}
+                        <p class="mb-2" style="font-size: .95rem; font-weight: 400 !important;"><i
+                                class="fa-solid fa-medal"></i>&nbsp;&nbsp;{{ paper.award }}</p>
+                        {% endif %}
+                        {% unless paper.note contains 'accepted' %}
+                        <p style="font-size: .9rem; font-weight: 300 !important;">
+                            <a href="{{ '/assets/pdf/' | append: paper.id | append: '.pdf' | relative_url }}"><i
+                                    class="fa-solid fa-file"></i>&nbsp;&nbsp;PDF</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            {% if paper.video %}
+                            <a href="{{ 'https://youtu.be/' | append: paper.video }}"><i
+                                    class="fa-solid fa-play"></i>&nbsp;&nbsp;Video</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            {% endif %}
+                            {% if paper.slide %}
+                            <a href="{{ '/assets/pdf/' | append: paper.slide | relative_url }}"><i
+                                    class="fa-solid fa-file-powerpoint"></i>&nbsp;&nbsp;Slides</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            {% endif %}
+                            {% if paper.poster %}
+                            <a href="{{ '/assets/pdf/' | append: paper.poster | relative_url }}"><i
+                                    class="fa-solid fa-note-sticky"></i>&nbsp;&nbsp;Poster</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            {% endif %}
+                        </p>
+                        {% endunless %}
+                        {% unless forloop.last %}
+                        <hr>
+                        {% endunless %}
+                    </div>
+
+                </div>
+
+                {% endfor %}
+                {% endfor %}
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
 {% assign projects = site.data.project.project %}
 
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
 
-<div class="container py-4">
-    <p style="font-weight: 500 !important; text-transform: uppercase;">Project</p>
-    <p style="font-size:.85rem;font-weight: 300"> Here's a list of my projects. They're mostly past works connected to
-        research but not purely research endeavors and some almost-finished research projects I'm still working on.
 
-    <div class="row mt-3 g-3 grid">
-        {% for proj in projects %}
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 grid-item">
-            <div class="archive-container" data-bs-toggle="modal" data-bs-target="#modal{{ forloop.index }}">
-                <img class="archive-img" src="{{ proj.image | prepend: '/assets/images/project/' | relative_url }}">
-                <div class="archive-container-inner">
-                    <p class="archive-title">{{ proj.title }}</p>
-                    <p class="archive-description">{{ proj.description }}</p>
-                    <div class="tags">
-                        <p>
-                            {% for tag in proj.tags %}
-                            <a title="" href="">{{ tag }}</a>
-                            {% endfor %}
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="modal{{ forloop.index }}" tabindex="-1"
-            aria-labelledby="exampleModal{{ forloop.index }}" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <div style="display: block !important">
-                            <h5 class="modal-title" id="exampleModalLabel">{{ proj.title }}</h5>
-                            <p class="modal-description">{{ proj.description }}</p>
-                            <p class="modal-link">{% if proj.paper %}<a
-                                    href="{% if proj.paper contains 'http' %} {{ proj.paper }} {% else %} /assets/pdf/{{ proj.paper }} {% endif %}"><i
-                                        class="fas fa-book"></i>&nbsp; Paper</a> &nbsp;&nbsp;&nbsp; {% endif %}{% if
-                                proj.video %}<a href="{{ proj.video }}"><i class="fas fa-play"></i>&nbsp; Video</a>
-                                &nbsp;&nbsp;&nbsp; {% endif %}{% if proj.slide %}<a
-                                    href="/assets/pdf/{{ proj.slide }}"><i class="fas fa-poll-h"></i>&nbsp; Slide</a>
-                                &nbsp;&nbsp;&nbsp; {% endif %}{% if proj.appstore %}<a href="{{ proj.appstore }}"><i
-                                        class="fab fa-app-store-ios"></i>&nbsp; App Store</a> &nbsp;&nbsp;&nbsp; {%
-                                endif %}{% if proj.code %}<a href="{{ proj.code }}"><i class="fab fa-github"></i>&nbsp;
-                                    Code</a> &nbsp;&nbsp;&nbsp; {% endif %}{% if proj.link %}<a
-                                    href="{{ proj.link }}"><i class="fas fa-external-link"></i>&nbsp; Link</a>{% endif
-                                %}</p>
-                        </div>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        {{ proj.detail | replace: 'site.baseurl', site.baseurl }}
-                    </div>
-                </div>
-            </div>
-        </div>
-        {% endfor %}
-    </div>
 </div>
 
 <script>
@@ -250,7 +327,7 @@ title: Weijun Li
     .profile-image {
         width: 100%;
         height: auto;
-        padding: 0 2.5rem;
+        padding: 0;
     }
 
     @media screen and (max-width: 1200px) {
@@ -293,7 +370,7 @@ title: Weijun Li
 
     p a {
         position: relative;
-        background-image: linear-gradient(rgba(251, 140, 36, 0.31), rgba(255, 105, 24, 0.251));
+        background-image: linear-gradient( rgba(122, 191, 255, 0.25), rgba(122, 191, 255, 0.4));       
         background-repeat: no-repeat;
         background-size: 100% 30%;
         background-position: 0 95%;
@@ -326,6 +403,12 @@ title: Weijun Li
     .item:last-child>hr {
         display: none;
     }
+    .content-wrapper {
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 0 1rem;
+  }
+ 
 </style>
 
 <!-- <script>

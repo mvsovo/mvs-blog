@@ -12,9 +12,9 @@ publication:
           - Yaxing Yao
           - Toby Jia-jun Li
         id: chi24_sandbox
-        venue: CHI 24 
+        venue: CHI 2024 
         venue_full: ''
-        note: arxiv
+        note: 
         video: GDO5anAjTG8
         abstract: We introduce an empathy-based approach that allows users to experience how privacy behaviors may alter system outcomes in a risk-free sandbox environment from the perspective of artificially generated personas. To generate realistic personas, we introduce a novel pipeline that augments the outputs of large language models using few-shot learning, contextualization, and chain of thoughts. 
         category: 
@@ -38,7 +38,7 @@ publication:
           - Jiaqi Teng
           - Zhihan Zeng
         id: chi24_dhhd
-        venue: CHI 2024 - 🎉 As a TA, I led this project in a sustainable design course, guiding it from idea generation to final writing, and mentored all students involved-(except for the first author, my advisor and also the course instructor).
+        venue: CHI 2024 
         venue_full: ''
         abstract: This paper explores the experiences of Deaf and Hard of Hearing (DHH) food delivery workers in China. We focus on their motivations, like better pay and community belonging, and their use of delivery platform tools, such as AI voice calls, for communication. Despite technological aids, human intervention remains important. We identify challenges such as safety risks, multitasking complexities, and mistrust in AI voice calls. Our findings offer insights for designing inclusive delivery platforms and broader implications for employment opportunities for DHH individuals, particularly in developing countries.
         category: 
@@ -68,77 +68,7 @@ publication:
           - "CSCW"
         featured: true
 
-  - year: '2023'
-    pubs:
-      - title: I Never Envy Anyone, for I Have Already Built a Kingdom With My Fingertips, Exploring Teenagers’ Experience in Chat-based Cosplay Community
-        image: kcos.png
-        gif: kcos.png
-        authors:
-          - Weijun Li
-          - Yaohua Bu
-          - Suqi Lou
-          - Shi Chen
-          - Lingyun Sun
-          - Changyuan Yang
-        id: acm_idc2023_cosplay_paper 
-        venue: IDC 23 
-        venue_full: Proceedings of the 22nd Annual ACM Interaction Design and Children Conference
-        abstract: This paper examines teenagers' chat-based cosplay in China. We found four primary motivations and their main practice. Adolescents perceived character presentation as key and devoted significant effort to refine their characters for higher consistency. We spotlight the interplay between social relationships and story creation, and also note both positive and negative experiences within the community.
-        note: WiP
-        category:  
-          - "Responsibility"
-          - "Wellbeing"
-          - "CSCW"
-        featured: true
-
-  - year: '2023'
-    pubs:
-      - title: EdibleToy:Empowering Children to Create Their Own Meals with a DIY Wafer Paper Kit
-        image: EdibleToy.png
-        gif: kit.gif
-        authors:
-          - Yilin Shao
-          - Boyu Feng
-          - Yingpin Chen
-          - Yue Yang
-          - Weijun Li
-          - Yifan Yan
-          - Yanan Wang
-          - Ye Tao
-          - Lingyun Sun
-          - Guanyun Wang
-        id: idc2023_edittoy
-        venue: IDC 23
-        video: Z09NrmssyFY
-        venue_full: Proceedings of the 22nd Annual ACM Interaction Design and Children Conference
-        abstract:  Drawing inspiration from shape-changing food research, we propose an approach that combines deformable wafer paper for food preparation. We summarize the principles of wafer paper controllable deformation and develop a toolkit to facilitate its use. We support children increating personalized, transformable food items using this method.
-        note: WiP
-        category:  
-          - "Wellbeing"
-
-        featured: true
-
-  - year: '2023'
-    pubs:
-      - title: Cultural Self-Adaptive Multimodal Gesture Generation Based on Multiple Culture Gesture Dataset
-        image: gesture.png
-        gif: gesture.png
-        authors:
-          - Jingyu Wu
-          - Shi Chen
-          - Shuyu Gan
-          - Weijun Li
-          - Changyuan Yang
-          - Lingyun Sun
-        id: mm23_gesture 
-        venue: MM 23 
-        venue_full: Proceedings of the 22nd Annual ACM Interaction Design and Children Conference
-        note: 
-        abstract: The paper introduces the Multiple Culture Gesture Dataset (MCGD), the largest public gesture dataset, with data from ten cultures, 200+ speakers, and 10,000 sequences. It also proposes a Cultural Self-adaptive Gesture Generation Network (CSGN) that generates culturally adaptive gestures without retraining, improving gesture generation's cultural accuracy and reducing average FGD to 48.0 and increasing CDR to 39.87%.
-        category:  
-          - "Responsibility"
-          - "AI Tools"
-        featured: true
+   
 
   - year: '2021'
     pubs:
@@ -190,64 +120,8 @@ publication:
           - "AI Tools"
           - "CSCW"
         featured: true
-  - year: '2021'  
-    pubs:
-      - title: Visual-speech Synthesis of Exaggerated Corrective Feedback
-        image: mmdemo.png
-        gif: mmdemo.png
-        authors:
-          - Yaohua Bu*
-          - Weijun Li*
-          - Tianyi Ma
-          - Shengqi Chen
-          - Jia Jia
-          - Kun Li
-          - Xiaobo Lu
-        id: mm2020_ecf_demo
-        venue: MM 2020 
-        venue_full: Proceedings of the 28th ACM International Conference on Multimedia
-        note: demo
-        abstract: We propose a method for exaggerated visual-speech feedback in CAPT. The speech exaggeration is realized by an emphatic speech generation neural network based on Tacotron, while the visual exaggeration is accomplished by ADC Viseme Blending, namely increasing Amplitude of movement, extending the phone’s Duration and enhancing the color Contrast. 
-        category: 
-           - "AI Tools"
-        featured: true
-  - year: '2020'
-    pubs:
-      - title: "An Integrated Method to Build Read-Aiding E-Books Based on Text Mining and Interactive Aesthetics"
-        image: ebook.png
-        gif: ebook.gif
-        id: jcdl2020_ebook_poster
-        video: ohL-t6EBHT8
-        authors:
-          - Weijun Li
-          - Fukai Yang
-          - Ruibing Jia
-          - Renmin Li
-          - Minghao Yin
-        note: poster
-        abstract: We propose a four-stage method to build read-aiding e-books directly from text, integrating the technologies in text mining and the ideas in interactive aesthetics. By applying this method, we manage to identify and present multiple complex relationships in the classical Chinese novel Romance of the Three Kingdoms, providing readers with vivid scenes and rich interactions for better comprehension.
-        venue: JCDL 2020
-        venue_full: Proceedings of the ACM/IEEE Joint Conference on Digital Libraries
-        category: JCDL 2020（Poster）
-        bibtex: |-
-          @inproceedings{10.1145/3383583.3398587,
-            author = {Li, Weijun and Yang, Fukai and Jia, Ruibing and Li, Renmin and Yin, Minghao},
-            title = {An Integrated Method to Build Read-Aiding E-Books Based on Text Mining and Interactive Aesthetics},
-            year = {2020},
-            isbn = {9781450375856},
-            publisher = {Association for Computing Machinery},
-            address = {New York, NY, USA},
-            url = {https://doi.org/10.1145/3383583.3398587},
-            doi = {10.1145/3383583.3398587},
-            booktitle = {Proceedings of the ACM/IEEE Joint Conference on Digital Libraries in 2020},
-            pages = {509–510},
-            numpages = {2},
-            keywords = {text mining, interactive e-book, information visualization},
-            location = {Virtual Event, China},
-            series = {JCDL '20}
-            }
-        category: 
-           - "AI Tools"
-        featured: true
+
+
+
 
       

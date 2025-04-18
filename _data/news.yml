@@ -1,17 +1,17 @@
 list: # format date as dd/mm/yyyy
-  - title: "Moved to Irvine! 🌴✨"
+  - title: "CHI 2025 in Yokohama! Presenting at CFP Workshop 🇯🇵✨"
+    date: "27/04/2025"
+  - title: "Moved to Irvine.I started my Ph.D. journey!🌴✨"
     detail: "After my master’s, I took the longest break of my life and now moved to Irvine!"
     date: "05/09/2024"
-  - title: "Two CHI papers got accepted!📝🎉"
+  - title: "Two co-author CHI papers got accepted!🎉"
     date: "19/01/2024"
-  - title: "Attending CSCW 2023 ✈ in Minneapolis and had a presentation of my paper. 📄🎤"
+  - title: "Attended CSCW 2023 in Minneapolis present of my paper. 📄"
     date: "13/10/2023"
-  - title: "Participated in a road race in the US and got the second place! 🥈🚴"
-    date: "01/08/2023" # Oct 21, 2021
-  - title: "Attended IDC 2023 🚗 in Chicago and presented my poster in-person. Met lots of new friends! 🏙️📌👫"
+  - title: "Attended IDC 2023 🚗 in Chicago and presented my poster. 🏙️"
     date: "15/06/2023"
-  - title: "Went to Notre Dame University and started working in-person with Toby! 🏫👩‍💻🤝"
+  - title: "Went to Notre Dame University and worked Toby! 👩‍💻"
     date: "25/05/2023" # Oct 21, 1997
   - title: "My CSCW paper focusing on intimacy got accepted! 💌📚"
-    date: "2/2022"
+    date: "01/12/2022"
 
