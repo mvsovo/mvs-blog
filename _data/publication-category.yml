@@ -1,5 +1,7 @@
 types:
-  - "Wellbeing"
-  - "Responsibility"
-  - "CSCW"
-  - "AI tools"
+  - name: "Human-centered AI"
+    slug: "ai"
+  - name: "Health"
+    slug: "health"
+  - name: "Social computing"
+    slug: "social"

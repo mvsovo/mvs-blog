@@ -1,0 +1,70 @@
+# Everything outside research. Edit freely, the homepage loops over this file.
+
+intro: >-
+  I ride and race a road bike, and take a gravel bike out when the pavement runs out. I also have a
+  cat! Her name is Bubbles, she is just over three, and she flew over from China with me.
+
+# Numbers pulled from Strava. Update by hand when you feel like it.
+stats_as_of: "9 August 2026"
+stats:
+  - value: "55,784"
+    unit: km
+    label: on the bike
+  - value: "519,503"
+    unit: m
+    label: climbed
+  - value: "916"
+    unit: ""
+    label: rides
+
+routes_note: >-
+  I mostly go looking for climbs. A few I would send you on if you want to ride around Irvine
+  (PCH is still the prettiest though, on the days the drivers are nice).
+
+routes:
+  - name: Silverado
+    kind: road
+    detail: A gentle twenty minute climb, and a really nice one.
+    figure: gentle
+
+  - name: Bulk Gully
+    kind: gravel
+    detail: My favourite gravel trail. People say it is an easy one tho. I have the QOM for now anyways lol
+    figure: gravel
+
+  - name: Newport Coast
+    kind: road
+    detail: A steady 6 percent.
+    figure: "6%"
+
+  - name: Top of the World
+    kind: road
+    detail: The Laguna classic. Best view of the coast around here. You can also get up there on gravel.
+    figure: climb
+
+  - name: Vista Ridge
+    kind: road
+    detail: Tack it on after Newport Coast. Short, a bit steep.
+    figure: steep
+
+  - name: Seven Sisters
+    kind: road
+    detail: Seven climbs back to back, almost no recovery in between.
+    figure: hard but good
+
+routes_outro: >-
+  There are plenty of group rides around OC too.
+
+photos:
+  - file: race-corner.jpg
+    shape: wide
+    alt: Weijun Li leading a group of riders through a corner during a criterium race
+    tilt: -0.9
+  - file: race-pack.jpg
+    shape: wide
+    alt: A women's road race pack riding close together on a wide road
+    tilt: 0.8
+  - file: coast.jpg
+    shape: square
+    alt: Weijun Li riding a road bike on the coast with the ocean behind
+    tilt: -0.6

@@ -1,17 +1,22 @@
-list: # format date as dd/mm/yyyy
-  - title: "CHI 2025 in Yokohama! Presenting at CFP Workshop 🇯🇵✨"
-    date: "27/04/2025"
-  - title: "Moved to Irvine.I started my Ph.D. journey!🌴✨"
-    detail: "After my master’s, I took the longest break of my life and now moved to Irvine!"
-    date: "05/09/2024"
-  - title: "Two co-author CHI papers got accepted!🎉"
-    date: "19/01/2024"
-  - title: "Attended CSCW 2023 in Minneapolis present of my paper. 📄"
-    date: "13/10/2023"
-  - title: "Attended IDC 2023 🚗 in Chicago and presented my poster. 🏙️"
-    date: "15/06/2023"
-  - title: "Went to Notre Dame University and worked Toby! 👩‍💻"
-    date: "25/05/2023" # Oct 21, 1997
-  - title: "My CSCW paper focusing on intimacy got accepted! 💌📚"
-    date: "01/12/2022"
-
+list: # newest first, dates in YYYY-MM-DD
+  - title: "See you in Detroit for UIST 2026 🎉"
+    date: 2026-07-15
+  - title: "Genetic health survey accepted to AMIA 2026 🧬"
+    date: 2026-06-10
+  - title: "Behind the Same Mask is out at CSCW 2025 🎭"
+    date: 2025-10-18
+  - title: "CHI 2025 in Yokohama, at the CFP workshop 🇯🇵"
+    date: 2025-04-27
+  - title: "Moved to Irvine and started the Ph.D. 🌴"
+    detail: "After my master's, I took the longest break of my life and now moved to Irvine!"
+    date: 2024-09-05
+  - title: "Two co-authored CHI papers accepted 🎉"
+    date: 2024-01-19
+  - title: "Presented at CSCW 2023 in Minneapolis 📄"
+    date: 2023-10-13
+  - title: "Presented a poster at IDC 2023 in Chicago 🏙️"
+    date: 2023-06-15
+  - title: "Visited Notre Dame to work with Toby 👩‍💻"
+    date: 2023-05-25
+  - title: "My CSCW paper on virtual intimacy got in 💌"
+    date: 2022-12-01

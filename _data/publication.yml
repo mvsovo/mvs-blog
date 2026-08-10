@@ -1,4 +1,87 @@
 publication:
+  - year: '2026'
+    pubs:
+      - title: "Supporting The Many Lives of Personal Data with Rebite: LLM-Powered Goal-Directed Framing in Food Journaling"
+        image: rebite.svg
+        gif: rebite.gif
+        authors:
+          - Weijun Li
+          - Daniel A. Epstein
+        id: uist26_rebite
+        doi: https://doi.org/10.1145/3830398.3830692
+        video_file: rebite_teaser.mp4
+        venue: UIST 2026
+        venue_full: The 39th Annual ACM Symposium on User Interface Software and Technology
+        abstract: People's health goals keep changing, but most tracking tools lock the meaning of data in at the moment it is logged, so a goal adopted later has nothing useful to work with. We propose goal-directed framing, which keeps meal records unstructured and lets a large language model interpret them through whatever goal is current. In a one-week deployment with 21 participants, reframing past meals under a new goal exposed overlaps and conflicts between goals and pushed people to renegotiate what they actually cared about.
+        category:
+          - health
+          - ai
+        featured: true
+        bibtex: |-
+          @inproceedings{li2026rebite,
+            author = {Li, Weijun and Epstein, Daniel A.},
+            title = {Supporting The Many Lives of Personal Data with Rebite: LLM-Powered Goal-Directed Framing in Food Journaling},
+            year = {2026},
+            isbn = {979-8-4007-2856-3},
+            publisher = {Association for Computing Machinery},
+            address = {New York, NY, USA},
+            url = {https://doi.org/10.1145/3830398.3830692},
+            doi = {10.1145/3830398.3830692},
+            booktitle = {Proceedings of the 39th Annual ACM Symposium on User Interface Software and Technology},
+            location = {Detroit, MI, USA},
+            series = {UIST '26}
+            }
+
+      - title: "Family Context, Reproductive Experiences, and Digital Engagement in Relation to Women's Genetic Health Knowledge, Perceptions, and Communication"
+        image: genetic_health.svg
+        authors:
+          - Ziqi Yang
+          - Weijun Li
+          - Di Hu
+          - Daniel A. Epstein
+          - Yunan Chen
+        id: amia26_genetic_health
+        venue: AMIA 2026
+        venue_full: AMIA 2026 Annual Symposium
+        abstract: A survey of 249 women in the United States on what makes genetic health feel personal. A bigger family network, having given birth, and broader technology use, including generative AI, each went with taking genes more seriously.
+        category:
+          - health
+        featured: true
+
+  - year: '2025'
+    pubs:
+      - title: "Behind the Same Mask: Understanding the Practice of Spontaneous Collective Anonymity on Chinese Social Platforms"
+        image: momo.png
+        gif: momo.png
+        authors:
+          - Suqi Lou
+          - Weijun Li
+          - Chao Zhang
+          - Shi Chen
+          - Zhicong Lu
+          - Yaxing Yao
+        id: cscw25_momo
+        doi: https://doi.org/10.1145/3710933
+        venue: CSCW 2025
+        venue_full: Proceedings of the ACM on Human-Computer Interaction
+        abstract: On Chinese platforms where real-name policies make hiding hard, thousands of users have quietly adopted the same avatar and the same nickname, "momo". We interviewed 20 of them. Sharing one identity gave people a second layer of anonymity, room to speak in discussions they would otherwise skip, and, unexpectedly, a sense of belonging to a crowd they had never met.
+        category:
+          - social
+        featured: true
+        bibtex: |-
+          @article{lou2025momo,
+            author = {Lou, Suqi and Li, Weijun and Zhang, Chao and Chen, Shi and Lu, Zhicong and Yao, Yaxing},
+            title = {Behind the Same Mask: Understanding the Practice of Spontaneous Collective Anonymity on Chinese Social Platforms},
+            year = {2025},
+            journal = {Proceedings of the ACM on Human-Computer Interaction},
+            volume = {9},
+            number = {2},
+            articleno = {CSCW035},
+            numpages = {31},
+            url = {https://doi.org/10.1145/3710933},
+            doi = {10.1145/3710933}
+            }
+
   - year: '2024'
     pubs:
       - title: An Empathy-Based Sandbox Approach to Bridge Attitudes, Goals, Knowledge, and Behaviors in the Privacy Paradox
@@ -8,24 +91,20 @@ publication:
           - Chaoran Chen
           - Weijun Li
           - Wenxin Song
-          - Yanfang Ye 
+          - Yanfang Ye
           - Yaxing Yao
           - Toby Jia-jun Li
         id: chi24_sandbox
-        venue: CHI 2024 
+        venue: CHI 2024
         venue_full: ''
-        note: 
+        note:
         video: GDO5anAjTG8
-        abstract: We introduce an empathy-based approach that allows users to experience how privacy behaviors may alter system outcomes in a risk-free sandbox environment from the perspective of artificially generated personas. To generate realistic personas, we introduce a novel pipeline that augments the outputs of large language models using few-shot learning, contextualization, and chain of thoughts. 
-        category: 
-           - "Responsibility"
-           - "Wellbeing"
-           - "CSCW"
-           - "AI Tools"
-        featured: true  
+        abstract: We introduce an empathy-based approach that allows users to experience how privacy behaviors may alter system outcomes in a risk-free sandbox environment from the perspective of artificially generated personas. To generate realistic personas, we introduce a novel pipeline that augments the outputs of large language models using few-shot learning, contextualization, and chain of thoughts.
+        category:
+          - ai
+          - social
+        featured: true
 
-  - year: '2024'
-    pubs:
       - title: Practices and Challenges of Delivering Among Deaf or Hard of Hearing Couriers
         image: dhhd.png
         gif: dhhd.png
@@ -38,15 +117,12 @@ publication:
           - Jiaqi Teng
           - Zhihan Zeng
         id: chi24_dhhd
-        venue: CHI 2024 
+        venue: CHI 2024
         venue_full: ''
         abstract: This paper explores the experiences of Deaf and Hard of Hearing (DHH) food delivery workers in China. We focus on their motivations, like better pay and community belonging, and their use of delivery platform tools, such as AI voice calls, for communication. Despite technological aids, human intervention remains important. We identify challenges such as safety risks, multitasking complexities, and mistrust in AI voice calls. Our findings offer insights for designing inclusive delivery platforms and broader implications for employment opportunities for DHH individuals, particularly in developing countries.
-        category: 
-          - "Responsibility"
-          - "Wellbeing"
-          - "CSCW"
+        category:
+          - social
         featured: true
-
 
   - year: '2023'
     pubs:
@@ -62,13 +138,9 @@ publication:
         venue: CSCW 2023
         venue_full: ''
         abstract: In China, Virtual romance service (VRS) provides a direct dyadic intimacy, different from fan-idol parasocial ties. Our study of 178 surveys and 22 interviews revealed virtual lovers' strategies to meet customers' emotional needs. Customers value VRS for its emotional benefits without the need for long-term commitment. We conclude with insights into the unique nature of virtual lovers and design implications for digital companionship.
-        category: 
-          - "Responsibility"
-          - "Wellbeing"
-          - "CSCW"
+        category:
+          - social
         featured: true
-
-   
 
   - year: '2021'
     pubs:
@@ -90,14 +162,12 @@ publication:
           - Yuanchun Shi
           - Xiaobo Lu
           - Ziwei Liu
-
         id: chi2021_capt_paper
         video: AeDKn5DwVfI
-
         venue: CHI 2021
         venue_full: 2021 CHI Conference on Human Factors in Computing Systems
         abstract: L2 English learners find it difficult to improve pronunciation due to lack of personalized feedback. This paper presents Pronunciation Teacher (PTeacher), a CAPT system offering personalized exaggerated audio-visual feedback. Interviewing 100 L2 learners and 22 native teachers, we propose three metrics to determine exaggeration levels in both modalities. We incorporate dynamic feedback based on learner proficiency. User studies indicate our system improves learning efficiency.
-        note: 
+        note:
         bibtex: |-
           @inproceedings{10.1145/3411764.3445490,
               author = {Bu, Yaohua and Ma, Tianyi and Li, Weijun and Zhou, Hang and Jia, Jia and Chen, Shengqi and Xu, Kaiyuan and Shi, Dachuan and Wu, Haozhe and Yang, Zhihan and Li, Kun and Wu, Zhiyong and Shi, Yuanchun and Lu, Xiaobo and Liu, Ziwei},
@@ -108,7 +178,6 @@ publication:
               address = {New York, NY, USA},
               url = {https://doi.org/10.1145/3411764.3445490},
               doi = {10.1145/3411764.3445490},
-              abstract = {Second language (L2) English learners often find it difficult to improve their pronunciations due to the lack of expressive and personalized corrective feedback. In this paper, we present Pronunciation Teacher&nbsp;(PTeacher), a Computer-Aided Pronunciation Training (CAPT) system that provides personalized exaggerated audio-visual corrective feedback for mispronunciations. Though the effectiveness of exaggerated feedback has been demonstrated, it is still unclear how to define the appropriate degrees of exaggeration when interacting with individual learners. To fill in this gap, we interview 100 L2 English learners and 22 professional native teachers to understand their needs and experiences. Three critical metrics are proposed for both learners and teachers to identify the best exaggeration levels in both audio and visual modalities. Additionally, we incorporate the personalized dynamic feedback mechanism given the English proficiency of learners. Based on the obtained insights, a comprehensive interactive pronunciation training course is designed to help L2 learners rectify mispronunciations in a more perceptible, understandable, and discriminative manner. Extensive user studies demonstrate that our system significantly promotes the learners’ learning efficiency.},
               booktitle = {Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems},
               articleno = {676},
               numpages = {14},
@@ -116,12 +185,6 @@ publication:
               location = {Yokohama, Japan},
               series = {CHI '21}
               }
-        category: 
-          - "AI Tools"
-          - "CSCW"
+        category:
+          - ai
         featured: true
-
-
-
-
-      

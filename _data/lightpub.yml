@@ -1,8 +1,24 @@
 publication:
+  - year: '2025'
+    pubs:
+      - title: "Enhancing Food Tracking Practice with LLMs: Towards Goal-Oriented Reflection"
+        image: cur.png
+        gif: cur.png
+        authors:
+          - Weijun Li
+          - Daniel A. Epstein
+        id: chi25_food_llm_workshop
+        venue: CHI 2025 Workshop
+        venue_full: CHI 2025 Workshop on Envisioning the Future of Interactive Health
+        abstract: An early sketch of the idea that grew into Rebite. We asked what a food journal would look like if the goal, rather than the calorie count, decided what a meal record means.
+        category:
+          - health
+          - ai
+        featured: true
 
   - year: '2023'
     pubs:
-      - title: I Never Envy Anyone, for I Have Already Built a Kingdom With My Fingertips, Exploring Teenagers’ Experience in Chat-based Cosplay Community
+      - title: I Never Envy Anyone, for I Have Already Built a Kingdom With My Fingertips, Exploring Teenagers' Experience in Chat-based Cosplay Community
         image: kcos.png
         gif: kcos.png
         authors:
@@ -12,19 +28,15 @@ publication:
           - Shi Chen
           - Lingyun Sun
           - Changyuan Yang
-        id: acm_idc2023_cosplay_paper 
-        venue: IDC 23 
+        id: acm_idc2023_cosplay_paper
+        venue: IDC 23
         venue_full: Proceedings of the 22nd Annual ACM Interaction Design and Children Conference
         abstract: This paper examines teenagers' chat-based cosplay in China. We found four primary motivations and their main practice. Adolescents perceived character presentation as key and devoted significant effort to refine their characters for higher consistency. We spotlight the interplay between social relationships and story creation, and also note both positive and negative experiences within the community.
-        category:  
-          - "Responsibility"
-          - "Wellbeing"
-          - "CSCW"
+        category:
+          - social
         featured: true
 
-  - year: '2023'
-    pubs:
-      - title: EdibleToy:Empowering Children to Create Their Own Meals with a DIY Wafer Paper Kit
+      - title: "EdibleToy: Empowering Children to Create Their Own Meals with a DIY Wafer Paper Kit"
         image: EdibleToy.png
         gif: kit.gif
         authors:
@@ -42,14 +54,12 @@ publication:
         venue: IDC 23
         video: Z09NrmssyFY
         venue_full: Proceedings of the 22nd Annual ACM Interaction Design and Children Conference
-        abstract:  Drawing inspiration from shape-changing food research, we propose an approach that combines deformable wafer paper for food preparation. We summarize the principles of wafer paper controllable deformation and develop a toolkit to facilitate its use. We support children increating personalized, transformable food items using this method.
-        category:  
-          - "Wellbeing"
-
+        abstract: Drawing inspiration from shape-changing food research, we propose an approach that combines deformable wafer paper for food preparation. We summarize the principles of wafer paper controllable deformation and develop a toolkit to facilitate its use. We support children in creating personalized, transformable food items using this method.
+        category:
+          - health
         featured: true
 
-
-  - year: '2021'  
+  - year: '2021'
     pubs:
       - title: Visual-speech Synthesis of Exaggerated Corrective Feedback
         image: mmdemo.png
@@ -63,12 +73,13 @@ publication:
           - Kun Li
           - Xiaobo Lu
         id: mm2020_ecf_demo
-        venue: MM 2020 
+        venue: MM 2020
         venue_full: Proceedings of the 28th ACM International Conference on Multimedia
-        abstract: We propose a method for exaggerated visual-speech feedback in CAPT. The speech exaggeration is realized by an emphatic speech generation neural network based on Tacotron, while the visual exaggeration is accomplished by ADC Viseme Blending, namely increasing Amplitude of movement, extending the phone’s Duration and enhancing the color Contrast. 
-        category: 
-           - "AI Tools"
+        abstract: We propose a method for exaggerated visual-speech feedback in CAPT. The speech exaggeration is realized by an emphatic speech generation neural network based on Tacotron, while the visual exaggeration is accomplished by ADC Viseme Blending, namely increasing Amplitude of movement, extending the phone's Duration and enhancing the color Contrast.
+        category:
+          - ai
         featured: true
+
   - year: '2020'
     pubs:
       - title: "An Integrated Method to Build Read-Aiding E-Books Based on Text Mining and Interactive Aesthetics"
@@ -85,7 +96,9 @@ publication:
         abstract: We propose a four-stage method to build read-aiding e-books directly from text, integrating the technologies in text mining and the ideas in interactive aesthetics. By applying this method, we manage to identify and present multiple complex relationships in the classical Chinese novel Romance of the Three Kingdoms, providing readers with vivid scenes and rich interactions for better comprehension.
         venue: JCDL 2020
         venue_full: Proceedings of the ACM/IEEE Joint Conference on Digital Libraries
-        category: JCDL 2020 
+        category:
+          - ai
+        featured: true
         bibtex: |-
           @inproceedings{10.1145/3383583.3398587,
             author = {Li, Weijun and Yang, Fukai and Jia, Ruibing and Li, Renmin and Yin, Minghao},
@@ -97,14 +110,9 @@ publication:
             url = {https://doi.org/10.1145/3383583.3398587},
             doi = {10.1145/3383583.3398587},
             booktitle = {Proceedings of the ACM/IEEE Joint Conference on Digital Libraries in 2020},
-            pages = {509–510},
+            pages = {509-510},
             numpages = {2},
             keywords = {text mining, interactive e-book, information visualization},
             location = {Virtual Event, China},
             series = {JCDL '20}
             }
-        category: 
-           - "AI Tools"
-        featured: true
-
-      

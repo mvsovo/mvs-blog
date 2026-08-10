@@ -2,6 +2,7 @@
 layout: default
 baseurl: /news
 title: News
+description: "Recent news from Weijun Li, HCI researcher and Informatics Ph.D. student at UC Irvine: paper acceptances, conference talks, and lab updates."
 ---
 
 {% assign news = site.data.news.list %}
@@ -12,8 +13,8 @@ title: News
         {% for new in news %}
         <div class="col-12 col-sm-6">
             <p class="mb-0" style="font-size: 1rem; font-weight: 400 !important;">{{ new.title }}</p>
-            <p class="mb-1" style="font-size: .85rem; font-weight: 200 !important;">{{ new.date | date_to_long_string }}</p>
-            <p style="font-size: .95rem; font-weight: 300 !important;">{{ new.description }}</p>
+            <p class="mb-1" style="font-size: .85rem; font-weight: 200 !important;">{{ new.date | date: "%B %-d, %Y" }}</p>
+            <p style="font-size: .95rem; font-weight: 300 !important;">{{ new.detail }}</p>
             {% unless forloop.last %}
             <hr>
             {% endunless %}

@@ -1,94 +1,65 @@
 ---
 layout: default
 title: Weijun Li
+description: "Weijun Li is a second-year Informatics Ph.D. student at UC Irvine, advised by Daniel Epstein in the PIE Lab. His research sits at the intersection of human-centered AI, health, and social computing. Work at CHI, CSCW, UIST, and AMIA."
 ---
 
-{% assign projects = site.data.project.project %}
 {% assign news = site.data.news.list %}
 {% assign publications = site.data.publication.publication %}
 {% assign lightpublications = site.data.lightpub.publication %}
-
 {% assign category = site.data.publication-category %}
+
 <div class="content-wrapper">
 
-<div class="container py-3">
+  <!-- Intro -->
+  <div class="container py-3">
     <div class="row">
-        <div class="col-12 col-md-3 align-self-center mb-4 mb-md-0">
-            <img src="{{ '/assets/images/main/profile-i.png' | relative_url }}" alt="" class="profile-image" id="hero">
-        </div>
-        <div class="col-12 col-md-9 align-self-center text-sm smaller-text">
-            <h4>Weijun Li</h4>
-            <p class="mt-2">
-              I am a Human-Computer Interaction (HCI) researcher and a first-year Informatics Ph.D. student at 
-              <a href="https://uci.edu/">🐜 University of California, Irvine</a>, working in the 
-              <a href="https://depstein.net/pielab">🥧 PIE LAB</a> with 
-              <a href="https://depstein.net/">Prof. Daniel Epstein</a>.
-            </p>
-            
-            <p>
-              I focus how to design responsible, well-being-oriented technologies. Currently, my research focuses on 
-              <a href="#">💡 personal informatics</a>, with broader interests in Human-Computer Interaction (HCI) and 
-              Computer-Supported Cooperative Work (CSCW). Previously, I worked on HCI and design projects at Zhejiang University with Prof. Lingyun Sun and Prof.
-                Shi Chen. Earlier, I was active in <a>algorithm competitions</a> and <a>accumulated experience as a
-                    full-stack developer</a> during my undergraduate studies.</p>
+      <div class="col-12 col-md-3 align-self-center mb-4 mb-md-0">
+        <img src="{{ '/assets/images/main/profile-i.png' | relative_url }}"
+          alt="Portrait illustration of Weijun Li" class="profile-image" id="hero">
+      </div>
+      <div class="col-12 col-md-9 align-self-center text-sm smaller-text">
+        <h1 class="name-heading">Weijun Li</h1>
+        <p class="mt-2">
+          I am a second-year Ph.D. student in Informatics at
+          <a href="https://uci.edu/">🐜 UC Irvine</a>, advised by
+          <a href="https://depstein.net/">Daniel Epstein</a> in the
+          <a href="https://depstein.net/pielab">🥧 PIE Lab</a>.
+        </p>
 
-            <p> Outside of research, you can find me <a href="https://www.strava.com/athletes/44462387">🚴‍♀️🌸cycling</a> in
-                the nearest mountain. Feel free to reach out if you’d like to chat about research or cycling!
-            </p>
+        <p>
+          My research sits at the intersection of <a href="#research">human-centered AI</a>,
+          <a href="#research">health</a>, and <a href="#research">social computing</a>. I build and study
+          interactive systems that help people make sense of information about themselves, their health, and their
+          everyday lives. I examine how these systems should interpret, present, and communicate personal information
+          to support understanding, reflection, and decision making. I combine <span class="hl">qualitative
+          research</span>, <span class="hl">interactive system design</span>, and
+          <span class="hl">real-world deployment</span>.
+        </p>
 
-            <a href="#" class="cryptedmail" data-name="weijunl3" data-domain="uci" data-tld="edu"
-                onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;">
-                <i class="fa-solid fa-envelope" style="margin-right: .3rem;"></i>
-            </a>
+        <p>
+          My work appears at CHI, CSCW, UIST, and AMIA. Before Irvine I did my master's at Zhejiang University with
+          Prof. Lingyun Sun and Prof. Shi Chen. Earlier, I competed in algorithm contests and worked as a full-stack
+          developer during my undergraduate studies.
+        </p>
 
-            </p>
-        </div>
+        <p>
+          Outside research I am usually
+          <a href="{{ '/personal-life' | relative_url }}">🚴‍♀️🌸 out on my bike</a>, or at home with my favourite cat Bubbles and my
+          favourite people. Always happy to chat about research or bikes.
+        </p>
+
+        <a href="#" class="cryptedmail" data-name="weijunl3" data-domain="uci" data-tld="edu"
+          onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;">
+          <i class="fa-solid fa-envelope" style="margin-right: .3rem;"></i>
+        </a>
+      </div>
     </div>
-</div>
+  </div>
 
-
-<!-- News -->
-
-<!-- 
-<div class="container py-3">
+  <!-- News + latest work -->
+  <div class="container py-3">
     <div class="row">
-        <div class="container pb-3 px-0 px-md-3" id="news">
-            <p style="font-weight: 500 !important; text-transform: uppercase;">News</p>
-            <div class="row mt-4">
-                {% for new in news limit: 3 %}
-                <div class="col-12">
-                    <span class="mb-1" style="font-size: .8rem; font-weight: 200 !important; display:inline-block"> {{
-                        new.date
-                        | date: "%B %Y" }}</span>
-                    <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important; display:inline-block;">{{
-                        new.title
-                        }}</p>
-                </div>
-                {% endfor %}
-                <details style="display: inline-block; font-size: 16px">
-                    <summary style="padding-left:5px; margin-top:5px; margin-bottom:-10px; font-size: 16px"><span
-                            style="font-size: 14px"> See More</span></summary>
-                    <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important; display:inline-block">
-                        {% for new in news offset: 6 %}
-                    <div class="col-12">
-                        <span class="mb-1"
-                            style="font-size: .8rem; font-weight: 200 !important; display:inline-block">{{
-                            new.date | date: "%B %Y" }} </span>
-                        <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important; display:inline-block">{{
-                            new.title }}</p>
-                    </div>
-                    {% endfor %}
-
-                </details>
-            </div>
-
-        </div>
-    </div>
-</div> -->
-
-<div class="container py-3">
-    <div class="row">
-      <!-- Left: News -->
       <div class="col-md-7">
         <div class="pb-3 px-0 px-md-3" id="news">
           <p style="font-weight: 500 !important; text-transform: uppercase;">News</p>
@@ -96,14 +67,14 @@ title: Weijun Li
             {% for new in news limit: 5 %}
             <div class="col-12">
               <span class="mb-1" style="font-size: .8rem; font-weight: 200 !important; display:inline-block">
-                {{ new.date | date: "%B %Y" }}
+                {{ new.date | date: "%b %Y" }}
               </span>
               <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important; display:inline-block">
                 {{ new.title }}
               </p>
             </div>
             {% endfor %}
-  
+
             <details style="display: inline-block; font-size: 16px">
               <summary style="padding-left:5px; margin-top:5px; margin-bottom:10px; font-size: 16px">
                 <span style="font-size: 14px"> See More</span>
@@ -111,7 +82,7 @@ title: Weijun Li
               {% for new in news offset: 5 %}
               <div class="col-12">
                 <span class="mb-1" style="font-size: .8rem; font-weight: 200 !important; display:inline-block">
-                  {{ new.date | date: "%B %Y" }}
+                  {{ new.date | date: "%b %Y" }}
                 </span>
                 <p class="mb-0" style="font-size: 0.9rem; font-weight: 400 !important; display:inline-block">
                   {{ new.title }}
@@ -122,359 +93,280 @@ title: Weijun Li
           </div>
         </div>
       </div>
-  
-      <!-- Right: Current Work -->
-      <div class="col-md-5">
-        <div class="pb-3 px-2" id="current-work">
-            <p style="font-weight: 500 !important; text-transform: uppercase;">Ongoing Project</p>
 
-          
-          <img src="/assets/images/project/cur.png" alt="Current Work Image"
-               style="width: 100%; border-radius: 8px; margin-bottom: 0.8rem;">
-          
-          <p style="font-size: 0.9rem; font-weight: 300;">
-            Enhancing Food Tracking Practice with LLMs: Towards Goal-Oriented Reflection   (CHI 2025 EA)
-          </p>
+      <div class="col-md-5">
+        <div class="pb-3 px-0 px-md-3" id="current-work">
+          <p style="font-weight: 500 !important; text-transform: uppercase;">Working on now</p>
+          <ul class="now-list mt-4">
+            <li>
+              <svg class="now-doodle" viewBox="0 0 64 64" aria-hidden="true">
+                <g transform="rotate(-32 32 32)">
+                  <path d="M21.5 20.8 C29 20.2, 37 20.4, 43 21 A11 11 0 0 1 43 43 C36 43.6, 28 43.5, 21 43 A11 11 0 0 1 21.5 20.8 Z"
+                    fill="#FFFFFF" stroke="#1F1D1B" stroke-width="2.8" stroke-linejoin="round" />
+                  <path d="M21.5 20.8 C26 20.4, 30 20.4, 32 20.6 C32.3 28, 32.3 36, 32 43.3 C28 43.4, 24.5 43.3, 21 43 A11 11 0 0 1 21.5 20.8 Z"
+                    fill="#7ABFFF" stroke="none" />
+                  <path d="M32 20.6 C32.3 28, 32.3 36, 32 43.3" fill="none" stroke="#1F1D1B" stroke-width="2.8"
+                    stroke-linecap="round" />
+                </g>
+              </svg>
+              <span class="now-text">How GLP-1 medications reshape people's
+                <span class="hl">relationship with food</span></span>
+            </li>
+            <li>
+              <svg class="now-doodle" viewBox="0 0 64 64" aria-hidden="true">
+                <g fill="none" stroke="#1F1D1B" stroke-width="2.6" stroke-linecap="round">
+                  <path d="M9 44 C6 25, 18 8, 33 9 C47 10, 57 24, 55 40" />
+                  <path d="M15 45 C13 29, 22 15, 33 16 C44 17, 51 28, 49 41" />
+                  <path d="M21 46 C20 33, 26 23, 33 23.5 C41 24, 45 32, 44 42" />
+                </g>
+                <path d="M27 47 C27 38, 30 31, 34 31.5 C38 32, 39 38, 38 44" fill="none" stroke="#7ABFFF"
+                  stroke-width="3.2" stroke-linecap="round" />
+              </svg>
+              <span class="now-text">What makes <span class="hl">personal data personal</span>?</span>
+            </li>
+          </ul>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-<!-- Publication -->
-<div class="container pb-3 px-0 px-md-3" id="research">
+  <!-- Publications -->
+  <div class="container pb-3 px-0 px-md-3" id="research">
     <p style="font-weight: 500 !important; text-transform: uppercase;">Publications</p>
-   
+
+    <div class="pub-filter mt-3" role="group" aria-label="Filter publications by research area">
+      <button type="button" class="tag-btn is-active" data-filter="all">All</button>
+      {% for cat in category.types %}
+      <button type="button" class="tag-btn" data-filter="{{ cat.slug }}">{{ cat.name }}</button>
+      {% endfor %}
+    </div>
 
     <div class="row mt-4">
-
-        <div class="project-view">
-            <div class="row mt-4" style="flex: 0 0 100%;" id="publications">
-                {% for pub in publications %}
-
-
-
-                <div
-                    class="item row row_img px-0 {% for cat_each in paper.category %}tag-{{ cat_each | replace: ' / ', '' }} {% endfor %} ">
-                    {% for paper in pub.pubs %}
-                    <div class="col-md-3 home_img" style="display: flex; align-items: center;justify-content: center;">
-                        <img src="{{ '/assets/images/project/' | append: paper.image | relative_url }}" width="100%"
-                            alt="">
-                        <img src="{{ '/assets/images/project/' | append: paper.gif | relative_url }}" width="100%"
-                            class="c" alt="">
-                    </div>
-                    <div class="col-md-9">
-                        <div class=" px-0 mb-2 {% unless forloop.first %}mt-5{% endunless %}">
-                            <span style="font-weight: 400">{{ pub.year }}</span>
-                        </div>
-                        <p class="mb-2" style="font-size: 1rem; font-weight: 400 !important;">{{ paper.title }}</p>
-                        <p class="mb-2" style="font-size: .95rem; font-weight: 200 !important;">{% for author in
-                            paper.authors %}{% if author == "Weijun Li" or author == "Weijun Li*" %}<span
-                                style="font-weight: 400;" data-toggle="tooltip" title="Some tooltip text!">{{
-                                author }}</span>{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {%
-                            endunless
-                            %}{% endfor %}</p>
-                        <p class="mb-1" style="font-size: .9rem; font-weight: 200 !important;"><span
-                                style="font-weight: 400;font-size:.8rem;background-color:hsla(208, 100%, 82%, 0.294); ">{{
-                                paper.venue }} {% if paper.note %} ({{ paper.note }}){% endif %}</span>{% if
-                            paper.abstract %} {{ paper.abstract }}{% endif %}</p>
-
-                        {% if paper.award %}
-                        <p class="mb-2" style="font-size: .95rem; font-weight: 400 !important;"><i
-                                class="fa-solid fa-medal"></i>&nbsp;&nbsp;{{ paper.award }}</p>
-                        {% endif %}
-                        {% unless paper.note contains 'accepted' %}
-                        <p style="font-size: .9rem; font-weight: 300 !important;">
-                            <a href="{{ '/assets/pdf/' | append: paper.id | append: '.pdf' | relative_url }}"><i
-                                    class="fa-solid fa-file"></i>&nbsp;&nbsp;PDF</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                            {% if paper.video %}
-                            <a href="{{ 'https://youtu.be/' | append: paper.video }}"><i
-                                    class="fa-solid fa-play"></i>&nbsp;&nbsp;Video</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                            {% endif %}
-                            {% if paper.slide %}
-                            <a href="{{ '/assets/pdf/' | append: paper.slide | relative_url }}"><i
-                                    class="fa-solid fa-file-powerpoint"></i>&nbsp;&nbsp;Slides</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                            {% endif %}
-                            {% if paper.poster %}
-                            <a href="{{ '/assets/pdf/' | append: paper.poster | relative_url }}"><i
-                                    class="fa-solid fa-note-sticky"></i>&nbsp;&nbsp;Poster</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                            {% endif %}
-                        </p>
-                        {% endunless %}
-                        {% unless forloop.last %}
-                        <hr>
-                        {% endunless %}
-                    </div>
-
-                </div>
-
-                {% endfor %}
-                {% endfor %}
-            </div>
+      <div class="project-view">
+        <div class="row mt-4" style="flex: 0 0 100%;" id="publications">
+          {% include pub-list.html pubs=publications %}
         </div>
-
+      </div>
     </div>
-</div>
+  </div>
 
-
-
-<!-- Publication -->
-<div class="container pb-3 px-0 px-md-3" id="research">
+  <!-- Lightly reviewed -->
+  <div class="container pb-3 px-0 px-md-3" id="light-research">
     <p style="font-weight: 500 !important; text-transform: uppercase;">Lightly reviewed publications</p>
 
     <div class="row mt-4">
-
-        <div class="project-view">
-            <div class="row mt-4" style="flex: 0 0 100%;" id="publications">
-                {% for pub in lightpublications %}
-
-                <div
-                    class="item row row_img px-0 {% for cat_each in paper.category %}tag-{{ cat_each | replace: ' / ', '' }} {% endfor %} ">
-                    {% for paper in pub.pubs %}
-                    <div class="col-md-3 home_img" style="display: flex; align-items: center;justify-content: center;">
-                        <img src="{{ '/assets/images/project/' | append: paper.image | relative_url }}" width="100%"
-                            alt="">
-                        <img src="{{ '/assets/images/project/' | append: paper.gif | relative_url }}" width="100%"
-                            class="c" alt="">
-                    </div>
-                    <div class="col-md-9">
-                        <div class=" px-0 mb-2 {% unless forloop.first %}mt-5{% endunless %}">
-                            <span style="font-weight: 400">{{ pub.year }}</span>
-                        </div>
-                        <p class="mb-2" style="font-size: 1rem; font-weight: 400 !important;">{{ paper.title }}</p>
-                        <p class="mb-2" style="font-size: .95rem; font-weight: 200 !important;">{% for author in
-                            paper.authors %}{% if author == "Weijun Li" or author == "Weijun Li*" %}<span
-                                style="font-weight: 400;" data-toggle="tooltip" title="Some tooltip text!">{{
-                                author }}</span>{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {%
-                            endunless
-                            %}{% endfor %}</p>
-                        <p class="mb-1" style="font-size: .9rem; font-weight: 200 !important;"><span
-                                style="font-weight: 400;font-size:.8rem;background-color:hsla(208, 100%, 82%, 0.294); ">{{
-                                paper.venue }} {% if paper.note %} ({{ paper.note }}){% endif %}</span>{% if
-                            paper.abstract %} {{ paper.abstract }}{% endif %}</p>
-
-                        {% if paper.award %}
-                        <p class="mb-2" style="font-size: .95rem; font-weight: 400 !important;"><i
-                                class="fa-solid fa-medal"></i>&nbsp;&nbsp;{{ paper.award }}</p>
-                        {% endif %}
-                        {% unless paper.note contains 'accepted' %}
-                        <p style="font-size: .9rem; font-weight: 300 !important;">
-                            <a href="{{ '/assets/pdf/' | append: paper.id | append: '.pdf' | relative_url }}"><i
-                                    class="fa-solid fa-file"></i>&nbsp;&nbsp;PDF</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                            {% if paper.video %}
-                            <a href="{{ 'https://youtu.be/' | append: paper.video }}"><i
-                                    class="fa-solid fa-play"></i>&nbsp;&nbsp;Video</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                            {% endif %}
-                            {% if paper.slide %}
-                            <a href="{{ '/assets/pdf/' | append: paper.slide | relative_url }}"><i
-                                    class="fa-solid fa-file-powerpoint"></i>&nbsp;&nbsp;Slides</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                            {% endif %}
-                            {% if paper.poster %}
-                            <a href="{{ '/assets/pdf/' | append: paper.poster | relative_url }}"><i
-                                    class="fa-solid fa-note-sticky"></i>&nbsp;&nbsp;Poster</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                            {% endif %}
-                        </p>
-                        {% endunless %}
-                        {% unless forloop.last %}
-                        <hr>
-                        {% endunless %}
-                    </div>
-
-                </div>
-
-                {% endfor %}
-                {% endfor %}
-            </div>
+      <div class="project-view">
+        <div class="row mt-4" style="flex: 0 0 100%;" id="lightpublications">
+          {% include pub-list.html pubs=lightpublications %}
         </div>
-
+      </div>
     </div>
+  </div>
+
+  <p class="empty-note" id="empty-note">Nothing in this area yet.</p>
+
 </div>
-
-
-{% assign projects = site.data.project.project %}
-
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
-
-<!-- <div class="container py-4">
-    <p style="font-weight: 500 !important; text-transform: uppercase;">Project</p>
-    <p style="font-size:.85rem;font-weight: 300"> Here's a list of my projects. They're mostly past works connected to
-        research but not purely research endeavors and some almost-finished research projects I'm still working on.
-
-    <div class="row mt-3 g-3 grid">
-        {% for proj in projects %}
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 grid-item">
-            <div class="archive-container" data-bs-toggle="modal" data-bs-target="#modal{{ forloop.index }}">
-                <img class="archive-img" src="{{ proj.image | prepend: '/assets/images/project/' | relative_url }}">
-                <div class="archive-container-inner">
-                    <p class="archive-title">{{ proj.title }}</p>
-                    <p class="archive-description">{{ proj.description }}</p>
-                    <div class="tags">
-                        <p>
-                            {% for tag in proj.tags %}
-                            <a title="" href="">{{ tag }}</a>
-                            {% endfor %}
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="modal{{ forloop.index }}" tabindex="-1"
-            aria-labelledby="exampleModal{{ forloop.index }}" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <div style="display: block !important">
-                            <h5 class="modal-title" id="exampleModalLabel">{{ proj.title }}</h5>
-                            <p class="modal-description">{{ proj.description }}</p>
-                            <p class="modal-link">{% if proj.paper %}<a
-                                    href="{% if proj.paper contains 'http' %} {{ proj.paper }} {% else %} /assets/pdf/{{ proj.paper }} {% endif %}"><i
-                                        class="fas fa-book"></i>&nbsp; Paper</a> &nbsp;&nbsp;&nbsp; {% endif %}{% if
-                                proj.video %}<a href="{{ proj.video }}"><i class="fas fa-play"></i>&nbsp; Video</a>
-                                &nbsp;&nbsp;&nbsp; {% endif %}{% if proj.slide %}<a
-                                    href="/assets/pdf/{{ proj.slide }}"><i class="fas fa-poll-h"></i>&nbsp; Slide</a>
-                                &nbsp;&nbsp;&nbsp; {% endif %}{% if proj.appstore %}<a href="{{ proj.appstore }}"><i
-                                        class="fab fa-app-store-ios"></i>&nbsp; App Store</a> &nbsp;&nbsp;&nbsp; {%
-                                endif %}{% if proj.code %}<a href="{{ proj.code }}"><i class="fab fa-github"></i>&nbsp;
-                                    Code</a> &nbsp;&nbsp;&nbsp; {% endif %}{% if proj.link %}<a
-                                    href="{{ proj.link }}"><i class="fas fa-external-link"></i>&nbsp; Link</a>{% endif
-                                %}</p>
-                        </div>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        {{ proj.detail | replace: 'site.baseurl', site.baseurl }}
-                    </div>
-                </div>
-            </div>
-        </div>
-        {% endfor %}
-    </div>
-</div> -->
-</div>
-
-<script>
-    var grid = document.querySelector('.grid');
-    var msnry = new Masonry(grid, {
-        percentPosition: true,
-        itemSelector: '.grid-item'
-    });
-    imagesLoaded(grid).on('progress', function () {
-        msnry.layout();
-    });
-
-</script>
-
 
 <style>
-    /* .smaller-text h4 {
-         font-size: 0.9 em;
-        }
-        
-    .smaller-text p {
-         font-size: 0.85em;
-    } */
-
-    .cryptedmail:after {
-        content: attr(data-name) "@" attr(data-domain) "." attr(data-tld);
-    }
-
-    .profile-image {
-        width: 100%;
-        height: auto;
-        padding: 0;
-    }
-
-    @media screen and (max-width: 1200px) {
-        .profile-image {
-            padding: 0 1rem !important;
-        }
-    }
-
-    @media screen and (max-width: 991px) {
-        .profile-image {
-            padding: 0 .5rem !important;
-        }
-    }
-
-    @media screen and (max-width: 575px) {
-        .profile-image {
-            width: 50% !important;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 0 !important;
-        }
-    }
-
-    .home_img:hover img {
-        cursor: pointer;
-    }
-
-    .home_img:hover img:nth-child(1) {
-        display: none;
-    }
-
-    .home_img:hover img:nth-child(2) {
-        display: block;
-    }
-
-    .c {
-        display: none;
-    }
-
-    p a {
-        position: relative;
-        background-image: linear-gradient( rgba(122, 191, 255, 0.25), rgba(122, 191, 255, 0.4));       
-        background-repeat: no-repeat;
-        background-size: 100% 30%;
-        background-position: 0 95%;
-        transition: background-position 200ms cubic-bezier(0, 0.8, 0.13, 1), background-size 200ms cubic-bezier(0, 0.8, 0.13, 1);
-        padding: 2px 0;
-    }
-
-    p a:hover {
-        background-size: 100% 100%;
-    }
-
-    .row_img>div {
-        margin: 13px 0;
-        min-height: 150px;
-    }
-
-    .project-view {
-        padding-top: .5rem;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    @media (min-width:48.0625em) {
-        .project-view {
-            justify-content: center;
-        }
-    }
-
-    .item:last-child>hr {
-        display: none;
-    }
-    .content-wrapper {
-        max-width: 1140px;
-        margin: 0 auto;
-        padding: 0 1rem;
+  .cryptedmail:after {
+    content: attr(data-name) "@" attr(data-domain) "." attr(data-tld);
   }
- 
+
+  .name-heading {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+
+  .now-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .now-list li {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    margin-bottom: 1.6rem;
+  }
+
+  .now-doodle {
+    width: 46px;
+    height: 46px;
+    flex: 0 0 46px;
+    margin-top: -5px;
+  }
+
+  .now-text {
+    font-size: .92rem;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  .hl {
+    background-image: linear-gradient(rgba(122, 191, 255, 0.25), rgba(122, 191, 255, 0.5));
+    background-repeat: no-repeat;
+    background-size: 100% 32%;
+    background-position: 0 92%;
+    padding: 2px 0;
+  }
+
+  .profile-image {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .profile-image {
+      padding: 0 1rem !important;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .profile-image {
+      padding: 0 .5rem !important;
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    .profile-image {
+      width: 50% !important;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 !important;
+    }
+  }
+
+  .home_img.has-gif:hover img {
+    cursor: pointer;
+  }
+
+  .home_img.has-gif:hover img:nth-child(1) {
+    display: none;
+  }
+
+  .home_img.has-gif:hover img.c {
+    display: block;
+  }
+
+  .c {
+    display: none;
+  }
+
+  p a {
+    position: relative;
+    background-image: linear-gradient(rgba(122, 191, 255, 0.25), rgba(122, 191, 255, 0.4));
+    background-repeat: no-repeat;
+    background-size: 100% 30%;
+    background-position: 0 95%;
+    transition: background-position 200ms cubic-bezier(0, 0.8, 0.13, 1), background-size 200ms cubic-bezier(0, 0.8, 0.13, 1);
+    padding: 2px 0;
+  }
+
+  p a:hover {
+    background-size: 100% 100%;
+  }
+
+  .row_img>div {
+    margin: 13px 0;
+    min-height: 150px;
+  }
+
+  .home_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project-view {
+    padding-top: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .item:last-child hr {
+    display: none;
+  }
+
+  .content-wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  /* research area filter */
+  .pub-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .35rem .5rem;
+  }
+
+  .tag-btn {
+    border: 1px solid rgba(0, 0, 0, .12);
+    background: transparent;
+    border-radius: 999px;
+    padding: .2rem .75rem;
+    font-size: .85rem;
+    font-weight: 300;
+    color: inherit;
+    cursor: pointer;
+    transition: background-color 150ms ease, border-color 150ms ease;
+  }
+
+  .tag-btn:hover {
+    background-color: hsla(208, 100%, 82%, 0.25);
+  }
+
+  .tag-btn.is-active {
+    background-color: hsla(208, 100%, 82%, 0.45);
+    border-color: hsla(208, 60%, 60%, 0.5);
+    font-weight: 400;
+  }
+
+  .item.is-hidden {
+    display: none !important;
+  }
+
+  .empty-note {
+    display: none;
+    text-align: center;
+    font-size: .9rem;
+    font-weight: 300;
+    padding: 2rem 0;
+  }
+
+  .empty-note.is-shown {
+    display: block;
+  }
 </style>
 
-<!-- <script>
-    var musics = [
-        {
-            "file": "love_dive",
-            "caption": "IVE - Love Dive",
-            "link": "https://music.apple.com/us/album/love-dive/1616804151?i=1616804152"
-        }
-    ];
-    const selected = musics[Math.floor(Math.random() * musics.length)];
-    document.getElementById("hero").src = "/assets/images/main/hero/" + selected.file + ".svg";
-    document.getElementById("music").innerText = selected.caption;
-    document.getElementById("music").href = selected.link;
-</script> -->
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('.tag-btn');
+    var items = document.querySelectorAll('#publications .item, #lightpublications .item');
+    var emptyNote = document.getElementById('empty-note');
+
+    function apply(filter) {
+      var visible = 0;
+      items.forEach(function (item) {
+        var match = filter === 'all' || item.classList.contains('tag-' + filter);
+        item.classList.toggle('is-hidden', !match);
+        if (match) { visible++; }
+      });
+      emptyNote.classList.toggle('is-shown', visible === 0);
+    }
+
+    buttons.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        buttons.forEach(function (b) { b.classList.remove('is-active'); });
+        btn.classList.add('is-active');
+        apply(btn.dataset.filter);
+      });
+    });
+  })();
+</script>

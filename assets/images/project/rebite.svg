@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 602" width="1000" height="602" role="img"
+  aria-label="The same bowl of noodles read two ways: framed for recovery it shows carbs and protein, framed for blood sugar control it shows glycemic load and fiber">
+  <defs>
+    <filter id="rb-shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#B9AE9C" flood-opacity="0.28" />
+    </filter>
+    <style>
+      .t { font-family: "Avenir Next Rounded", "Nunito", "Quicksand", "Avenir Next", "Segoe UI", system-ui, sans-serif; }
+      .card { fill: #FFFFFF; stroke: #E7E2D9; stroke-width: 2; }
+      .hd { font-size: 34px; font-weight: 700; fill: #1F1D1B; }
+      .row { font-size: 20px; font-weight: 500; fill: #57524A; }
+      .num { font-size: 64px; font-weight: 800; fill: #1F1D1B; }
+      .unit { font-size: 26px; font-weight: 700; fill: #1F1D1B; }
+      .micro { font-size: 14px; font-weight: 700; fill: #A39C92; letter-spacing: 1.6px; }
+      .cap { font-size: 23px; font-weight: 500; fill: #A39C92; }
+    </style>
+  </defs>
+
+  <!-- reading one: recovery -->
+  <g filter="url(#rb-shadow)">
+    <rect class="card" x="46" y="78" width="380" height="382" rx="22" />
+  </g>
+  <text class="t hd" x="82" y="140">Recovery</text>
+  <rect x="82" y="164" width="308" height="46" rx="11" fill="#F4F1EA" />
+  <text class="t row" x="102" y="194">Carbs refill glycogen</text>
+  <rect x="82" y="222" width="308" height="46" rx="11" fill="#F4F1EA" />
+  <text class="t row" x="102" y="252">Protein repairs muscle</text>
+  <text class="t num" x="112" y="378">85<tspan class="unit">g</tspan></text>
+  <text class="t num" x="264" y="378">22<tspan class="unit">g</tspan></text>
+  <text class="t micro" x="114" y="410">CARBS</text>
+  <text class="t micro" x="266" y="410">PROTEIN</text>
+
+  <!-- the bowl -->
+  <path d="M450 300 a50 40 0 0 1 100 0" fill="none" stroke="#F5C84C" stroke-width="11" stroke-linecap="round" />
+  <path d="M470 300 a30 24 0 0 1 60 0" fill="none" stroke="#F5C84C" stroke-width="11" stroke-linecap="round" />
+  <path d="M470 266 l88 -34" fill="none" stroke="#1F1D1B" stroke-width="6" stroke-linecap="round" />
+  <path d="M476 280 l88 -34" fill="none" stroke="#1F1D1B" stroke-width="6" stroke-linecap="round" />
+  <path d="M434 300 a66 66 0 0 0 132 0 z" fill="#FFFFFF" stroke="#1F1D1B" stroke-width="6" stroke-linejoin="round" />
+  <path d="M432 300 h136" fill="none" stroke="#1F1D1B" stroke-width="6" stroke-linecap="round" />
+
+  <!-- reading two: blood sugar -->
+  <g filter="url(#rb-shadow)">
+    <rect class="card" x="574" y="78" width="380" height="382" rx="22" />
+  </g>
+  <text class="t hd" x="610" y="140">Blood sugar</text>
+  <rect x="610" y="164" width="308" height="46" rx="11" fill="#FCEDF1" />
+  <text class="t row" x="630" y="194" fill="#8E3C57">High GL spikes sugar</text>
+  <rect x="610" y="222" width="308" height="46" rx="11" fill="#FCEDF1" />
+  <text class="t row" x="630" y="252" fill="#8E3C57">Low fiber, less stable</text>
+  <text class="t num" x="640" y="378">84</text>
+  <text class="t num" x="830" y="378">3<tspan class="unit">g</tspan></text>
+  <text class="t micro" x="642" y="410">GLYCEMIC LOAD</text>
+  <text class="t micro" x="832" y="410">FIBER</text>
+
+  <text class="t cap" x="500" y="536" text-anchor="middle">same bowl, two readings</text>
+</svg>

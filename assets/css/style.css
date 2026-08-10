@@ -14,21 +14,9 @@
 	--column-margin-top: 4rem;
 }
 
-html {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-img, a {
-  user-drag: none; 
-  user-select: none;
-  -moz-user-select: none;
+img {
+  user-drag: none;
   -webkit-user-drag: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
 }
 
 body {
